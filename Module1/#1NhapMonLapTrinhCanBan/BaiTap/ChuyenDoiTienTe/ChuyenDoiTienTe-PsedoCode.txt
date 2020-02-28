@@ -1,0 +1,5 @@
+Begin
+	Input S
+	V = S*23000
+	Display V
+End

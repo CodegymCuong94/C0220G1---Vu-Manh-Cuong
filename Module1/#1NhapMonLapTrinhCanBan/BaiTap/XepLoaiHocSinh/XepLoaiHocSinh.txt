@@ -1,0 +1,10 @@
+Begin
+	Display	Nhập số điểm của học sinh
+	N<=100
+	Input N
+	if	N<35 then	Display E
+		else N<=35 or N<45 then display D
+			else N>=45 or N<60 then display C
+				else N>=60 or N<75 then display B
+					else dispaly A
+end.

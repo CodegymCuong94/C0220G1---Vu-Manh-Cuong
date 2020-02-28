@@ -1,0 +1,7 @@
+Begin
+	Input T
+	Input L
+	Input H
+	C = (T+L+H)/3
+	Display C
+End

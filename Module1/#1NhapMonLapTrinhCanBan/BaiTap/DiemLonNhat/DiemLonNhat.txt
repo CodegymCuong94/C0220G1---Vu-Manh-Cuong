@@ -1,0 +1,10 @@
+Begin	
+	Display Nhap ba so bat ky
+	Input A,B,C
+		IF A>B 
+			then A>c 
+				Display A
+			else display C
+		else B >C then display B
+			else display B
+End
