@@ -2,9 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<h1 style="color:springgreen;">MT</h1>
+<form name="Maytinh">
+    <table>
+        <tr>
+            <td colspan="10">
+                <input type="text" name="display" disabled>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="button" name="one" value="1" onclick="Maytinh.display.value += 1"></td>
+            <td><input type="button" name="two" value="2" onclick="Maytinh.display.value += 2"></td>
+            <td><input type="button" name="three" value="3" onclick="Maytinh.display.value += 3"></td>
+            <td><input type="button" class="operator" name="plus" value="+"
+                       onclick="Maytinh.display.value += '+'"></td>
+        </tr>
+        <td><input type="button" name="four" value="4" onclick="Maytinh.display.value += 4"></td>
+        <td><input type="button" name="five" value="5" onclick="Maytinh.display.value += 5"></td>
+        <td><input type="button" name="six" value="6" onclick="Maytinh.display.value += 6"></td>
+        <td><input type="button" class="operator" name="minus" value="-"
+                   onclick="Maytinh.display.value += '-'"></td>
+        </tr>
+        <tr>
+            <td><input type="button" name="seven" value="7" onclick="Maytinh.display.value += 7"></td>
+            <td><input type="button" name="eight" value="8" onclick="Maytinh.display.value += 8"></td>
+            <td><input type="button" name="nine" value="9" onclick="Maytinh.display.value += 9"></td>
+            <td><input type="button" class="operator" name="times" value="x"
+                       onclick="Maytinh.display.value += '*'"></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="operator" id="clear" name="clear"
+                       value="C" onclick="Maytinh.display.value = ''"></td>
+            <td><input type="button" class="operator" name="zero"
+                       value="0" onclick="Maytinh.display.value += '0'"></td>
+            <td><input type="button" class="operator" name="doit"
+                       value="=" onclick="Maytinh.display.value = eval(Maytinh.display.value)"></td>
+            <td><input type="button" class="operator" name="div"
+                       value="/" onclick="Maytinh.display.value += '/'"></td>
+        </tr>
+    </table>
+</form>
 </body>
 </html>

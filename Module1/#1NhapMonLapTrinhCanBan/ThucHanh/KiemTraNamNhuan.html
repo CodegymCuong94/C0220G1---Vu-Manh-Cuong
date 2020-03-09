@@ -2,9 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+  <script>
+    var year =  (prompt ("Nhập năm bạn muốn kiểm tra"))*1;
+    if((year%4 == 0 && year %100 != 0) || (year % 400 == 0 && year %100 == 0) ){
+        document.write("Năm " + year + " là năm nhuận")
+    }
+      else document.write("Năm" + year + " không phải năm nhuận")
+  </script>
 </body>
 </html>

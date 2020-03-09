@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /* (Bai 1)
+    var color =Array("red","green","white","black");
+     alert(color);
+     document.write(color);
+     console.log(color);*/
+    //Bai 2:
+ /* var str=prompt("nhap mot day so:",);
+    //var str = x.toString();
+    var result = [str[0]];
+    for(let x=1; x<str.length; x++)
+    {
+        if((str[x-1]%2 === 0)&&(str[x]%2 === 0))
+        {
+            result.push('-', str[x]);
+        }
+        else
+        {
+            result.push(str[x]);
+        }
+    }
+   document.write(result.join(''));
+
+console.log(result.join(''));
+*/
+// Bai 3
+var str = prompt("nhap mot dong chu bat ky:",);
+var STR = str.toUpperCase();
+
+var result = [str[0]];
+var RESULT = [STR[0]];
+
+/*for(var x =1; x <= str.length; x++) {
+    result.push(str[x])
+};
+for (var i = 1; i <= STR.length; i++){
+    RESULT.push(STR[i]);
+}*/
+for( var x = 1; x<= str.length; x++ ){
+ result.push(str[x])}
+for( var x = 1; x <= str.length; x++){
+    RESULT.push(STR[x])
+}
+document.write(result)
+    document.write("<br>");
+
+    document.write(RESULT);
+    document.write("<br>");
+   for(x =1; x <= result.length;x++){
+       if(result[x]!== RESULT[x]){
+           result[x]=RESULT[x]
+       }else{result[x]= result[x]}
+   }
+   document.write(result)
+
+
+
+</script>
+</body>
+</html>

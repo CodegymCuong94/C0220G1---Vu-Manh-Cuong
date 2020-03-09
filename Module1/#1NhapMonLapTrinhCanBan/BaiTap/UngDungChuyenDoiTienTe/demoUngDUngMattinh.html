@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ Sothunhat :<input id="soThuNhat"><br>
+ Sothuhai   :<input id="soThuHai"><br>
+<button onclick="cong()"> Addition(+)</button>
+<button onclick="tru()"> Sbutraction(-) </button>
+<button onclick="nhan()"> Mutltiplication(X)</button>
+<button onclick="chia()"> Division(/)</button>
+ <script>
+     function cong() {
+         let soThuNhat = document.getElementById("soThuNhat").value;
+         let soThuHai = document.getElementById("soThuHai").value;
+         alert(parseInt(soThuNhat) + parseInt(soThuHai));
+     }
+</script>
+</body>
+</html>

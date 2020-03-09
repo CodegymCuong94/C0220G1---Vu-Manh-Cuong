@@ -2,9 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+   /* var a = prompt( "Nhập giá trị của a",'')*1
+    var b = prompt("Nhập giá trị của b", '')*1
+    if ((a + b) < 4) {
+        alert("Below")
+    } else {
+        alert("Over")
+    }*/
+   var mess = prompt("Nhập giá trị:",'')
+   switch (mess) {
+       case(mess.toLocaleLowerCase() == "employee"):// Tại sao câu lệnh không được thực thi??
+                                                // làm thế nào để máy hiểu đc cả chữ In hoa lẫn thường
+           alert("Hello");
+           break;
+       case (mess.toLocaleLowerCase() =="director"):
+           alert("Greeting");
+           break;
+       case "":
+            alert(" No login");
+            break;
+       default :
+           alert("");
+   }
+
+</script>
 </body>
 </html>

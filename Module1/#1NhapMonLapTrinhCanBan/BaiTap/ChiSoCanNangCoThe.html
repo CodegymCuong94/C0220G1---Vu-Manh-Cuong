@@ -2,9 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+Nhap can nang:
+<input type="text" value="" id="kg">
+</br>
+Nhap chieu cao:
+<input type="text" value="" id="m"></br>
+<input type="button" value="ketqua" onclick="bmi()"></br>
+<p id="ketqua"></p>
+<script>
+    var ketqua = document.getElementById("ketqua");
+
+    function bmi() {
+        var kg =document.getElementById("kg").value;
+        var m = document.getElementById("m").value;
+        var a = kg / (m * m);
+        if (a < 18.5) {
+            ketqua.innerHTML = "Ban thieu can";
+        }else if (a<25){
+            ketqua.innerHTML = "Ban binh thuong"
+        }else if (a<30){
+            ketqua.innerHTML = "Ban thua can"
+        }else {
+            ketqua.innerHTML = "Ban beo phi"
+        }
+    }
+
+
+</script>
+
+
+<script>
+
+</script>
 </body>
 </html>

@@ -2,9 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<form>
+    Name:
+    <input type = "text" id = "name"><br>
+    ID Card:
+    <input type = "text" id = "idc"><br>
+    Date of bỉth:
+    <input type = "text" id = "dob"><br>
+    Email:
+    <input type = "text" id = "email"><br>
+    Address:
+    <input type = "text" id = "address"><br>
+    Number of people:
+    <input type = "text" id = "nob"><br>
+    Number of days:
+    <input type = "text" id = "nod"><br>
+
+    Hạng khách:
+    <select id ="hangkhach"><br>
+        <option value = "diamond">Diamond</option>
+        <option value = "platinum">Platinum</option>
+        <option value = "gold">Gold</option>
+        <option value = "sliver">Silver</option>
+        <option value = "member">Member</option>
+    </select>
+     Loại Dịch vụ:
+     <select id = "loaiphong"   ><br>
+        <option value = "villa">Villa</option>
+         <option value = "house">House</option>
+        <option value = "room">Room</option>
+     </select>
+    Loại phòng thuê:
+    <select id = "hangphong">
+        <option value = "vip">Vip</option>
+        <option value = "business">Business</option>
+        <option value = "normal">Normal</option>
+    </select>
+    <button onclick="hienthi();return false">Hiển thị</button>
+</form>
+<p id="ketqua"></p>
+<script>
+    function hienthi(){
+
+        var name = document.getElementById("name").value;
+        var idc = document.getElementById("idc").value;
+        var dob = document.getElementById("dob").value;
+        var email = document.getElementById("email").value;
+        var address = document.getElementById("address").value;
+        var nob = document.getElementById("nob").value;
+        var nod = document.getElementById("nod").value;
+        var hangkhach = document.getElementById("hangkhach").value;
+        var loaiphong = document.getElementById("loaiphong").value;
+        var hangphong = document.getElementByIt("hangphong").value;
+        var ketqua = document.getElementById("ketqua").value;
+        document.write("name + idc + dob + email + address + nob + nod + hangkhach + loaiphong + hangphong") ;
+
+
+
+    }
+</script>
+
+
+
+
+
+
+
 </body>
 </html>

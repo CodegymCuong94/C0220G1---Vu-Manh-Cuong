@@ -2,9 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+    /*<select name = "From">
+        <option value ="VN">VNĐ</option>
+        <option value = "USD">USD</option>
+    </select>
+    <select name = "To">
+        <option value ="USD">USD</option>
+        <option value = "VN">VNĐ</option>
+    </select>
+    */
+    <form>
+        Số Tiền :
+        <input type="text" id="soTien">
+        Từ :
+        <select id="chonTu">
+            <option value="VN">Viet Nam</option>
+            <option value="US">USD</option>
+        </select>
+        Sang :
+        <select id="chonSang">
+            <option value="VN">Viet Nam</option>
+            <option value="US">USD</option>
+        </select>
+        <button onclick="chuyendoi();return false">chuyển đổi</button>
+    </form>
+    <p id="ketQua"></p>
+
+    <script>
+        function chuyendoi() {
+            var soTien = document.getElementById("soTien").value;
+            var chonTu = document.getElementById("chonTu").value;
+            var chonSang = document.getElementById("chonSang").value;
+            var ketQua = document.getElementById("ketQua");
+            if (chonTu == "VN" && chonSang == "US") {
+                ketQua.innerText = soTien / 23000;
+            } else if (chonTu == "US" && chonSang == "VN") {
+                ketQua.innerText = soTien * 23000;
+            } else {
+                ketQua.innerText = soTien;
+            }
+        }
+    </script>
 </body>
 </html>

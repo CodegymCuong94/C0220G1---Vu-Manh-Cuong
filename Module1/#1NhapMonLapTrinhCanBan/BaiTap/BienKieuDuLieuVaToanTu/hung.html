@@ -2,9 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<form >
+    <input type="text" value="" name="input1" id="x">
+    <input type="text" value="" name="input2" id="y">
+    <br/>
+    <input type="button" value="Addition(+)" onclick=Addition()>
+    <input type="button" value="Substraction(-)" onclick=Substraction()>
+    <input type="button" value="Multiplication(x)" onclick=Multiplication()>
+    <input type="button" value="Division(*)" onclick=Division()>
+</form>
+<p id="result">Result devision : </p>
+</div>
+<script>
+    var u = document.getElementById("result");
+    function Addition() {
+        var a = parseInt(document.getElementById("x").value);
+        var b = parseInt(document.getElementById("y").value);
+        if (isNaN(a)||isNaN(b)) {
+            u.innerHTML= ' Dữ liệu không hợp lệ'
+        } else {
+            u.innerHTML = 'Result devision :'+ (a+b);
+        }
+    }
+    function Substraction() {
+        var a = parseInt(document.getElementById("x").value);
+        var b = parseInt(document.getElementById("y").value);
+        if (isNaN(a)||isNaN(b)) {
+            u.innerHTML= ' Dữ liệu không hợp lệ'
+        } else {
+            u.innerHTML = 'Result devision :'+(a-b);
+        }
+    }
+    function Multiplication() {
+        var a = parseInt(document.getElementById("x").value);
+        var b = parseInt(document.getElementById("y").value);
+        if (isNaN(a)||isNaN(b)) {
+            u.innerHTML= ' Dữ liệu không hợp lệ'
+        } else {
+            u.innerHTML = 'Result devision :'+(a*b);
+        }
+    }
+    function Division() {
+        var a = parseInt(document.getElementById("x").value);
+        var b = parseInt(document.getElementById("y").value);
+        if (isNaN(a)||isNaN(b)) {
+            u.innerHTML= ' Dữ liệu không hợp lệ'
+        } else if (b == 0) {
+            u.innerHTML= 'Không có phép chia cho số 0'
+        } else {
+            u.innerHTML = 'Result devision :'+(a/b);
+        }
+    }
+</script>
 </body>
 </html>
