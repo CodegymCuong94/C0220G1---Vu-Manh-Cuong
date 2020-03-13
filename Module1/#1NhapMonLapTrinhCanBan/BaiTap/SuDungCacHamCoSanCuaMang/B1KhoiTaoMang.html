@@ -32,36 +32,16 @@ console.log(result.join(''));
 */
 // Bai 3
 var str = prompt("nhap mot dong chu bat ky:",);
-var STR = str.toUpperCase();
-
-var result = [str[0]];
-var RESULT = [STR[0]];
-
-/*for(var x =1; x <= str.length; x++) {
-    result.push(str[x])
-};
-for (var i = 1; i <= STR.length; i++){
-    RESULT.push(STR[i]);
-}*/
-for( var x = 1; x<= str.length; x++ ){
- result.push(str[x])}
-for( var x = 1; x <= str.length; x++){
-    RESULT.push(STR[x])
+var arrstr = Array.from(str)
+for(i=0; i< arrstr.length; i++){
+    if(arrstr[i]>='a'&& arrstr[i]<='z'){
+        document.write(arrstr[i].toUpperCase())
+    }else{document.write(arrstr[i].toLowerCase())}
 }
-document.write(result)
-    document.write("<br>");
-
-    document.write(RESULT);
-    document.write("<br>");
-   for(x =1; x <= result.length;x++){
-       if(result[x]!== RESULT[x]){
-           result[x]=RESULT[x]
-       }else{result[x]= result[x]}
-   }
-   document.write(result)
 
 
 
 </script>
+
 </body>
 </html>
