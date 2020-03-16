@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a =new Array(parseInt(prompt("ban muon kiem in tat ca cac so nguyen to tu 2 cho toi so may:")));
+    for(i=0; i<a.length; i++){
+        a[i]=i
+    };
+    a.push(a.length)
+    a.shift();
+    document.write(a.length);
+    document.write("hien thi cac day so trong mang a:"+ a+"<br>");
+    let b = [];
+    let count = 0;
+    for(i = 2; i<a.length; i++){
+        for(j =2; j<=i; j++){
+            if((a[i]%j !== 0)&&){
+                count++;
+                break;
+            }else{b.push(a[i])};
+            break;
+        }
+    };b.unshift(2);
+    document.write(b);
+
+</script>
+</body>
+</html>

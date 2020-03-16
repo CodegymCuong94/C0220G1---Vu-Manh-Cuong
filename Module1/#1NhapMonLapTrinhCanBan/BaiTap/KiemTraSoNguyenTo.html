@@ -5,12 +5,24 @@
     <title>Title</title>
 </head>
 <body>
+
 <script>
-    var a = prompt("Nhập vào một số bất kỳ:","0")*1;
-    var b;
-    for (b= 2; b <a; b++){
-        if(a % b ==0) {document.write("Số" + a + " không phải số nguyên tố.")} else{document.write( "Số" + a + " là số nguyên tố.")}
+    // var a = prompt("Nhập vào một số bất kỳ:","0")*1;
+    // var b;
+    // for (b= 2; b <a; b++){
+    //     if(a % b ==0) {document.write("Số" + a + " không phải số nguyên tố.")} else{document.write( "Số" + a + " là số nguyên tố.")}
+    // }
+    function swap(a, b) {
+        var temp = a;
+        a = b;
+        b = temp;
     }
+
+
+    swap(5,10);
+    document.write("a = " + a + ", b = " + b);
+
+
 
 </script>
 </body>

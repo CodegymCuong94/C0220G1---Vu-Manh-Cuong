@@ -84,16 +84,27 @@ for(i=0; i<number.length;i++){
         document.write(numbers+"<br>");
     }*/
     //Bai 8:
-    let numbers = new Array(10);
+    /*let numbers = new Array(10);
     for(let i = 0; i< numbers.length; i++){
         numbers[i]= prompt("nhap vao 10 so bat ky:")
         };
         numbers.sort(function (a,b){
         return b - a;
         });
-         document.write(numbers);
+         document.write(numbers);*/
     //Bai 9:
-    
+    let a = new Array(10);
+    let b = new Array(10);
+    for(let i = 0; i< a.length; i++) {
+        a[i]= prompt("nhap vao 10 so bat ky cua a:")
+    };document.write(a + "<br>");
+    for( let i = 0; i < b.length; i ++){
+        b[i]= prompt("nhap vao 10 so bat ky cua b:")
+    };document.write(b + "<br>");
+    let c = a.concat(b);
+    document.write(c + "<br>");
+
+
 
 
 
