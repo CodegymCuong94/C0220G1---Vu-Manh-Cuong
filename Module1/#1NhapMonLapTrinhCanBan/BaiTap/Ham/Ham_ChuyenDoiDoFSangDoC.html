@@ -10,13 +10,18 @@
 Độ F:
 <form>
     <p><input type = "number" id ="doF" ></p>
-    <input type ="button"  onclick=" chuyenDoi(); return false" value = "Chuyen Đổi">
+    <input type ="button"  onclick=" chuyenDoi()" value = "Chuyen Đổi">
+    <p id ="result"></p>
 </form>
 <script>
-functon chuyenDoi(doF){
-    var doF = document.getElementById("doF").value*1;
-    var doC =
-}
+
+function chuyenDoi(){
+    var doF = parseInt(document.getElementById("doF").value);
+    var doC = (doF - 32)/1.8;
+    //document.write("Giá trị nhiệt độ C là" + result);
+    document.getElementById('result').innerText="Giá trị nhiệt độ C là" + doC
+};
+
 </script>
 
 
