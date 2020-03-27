@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    Name:
+    <input type = "text" id = "name"><br>
+    ID Card:
+    <input type = "text" id = "idc"><br>
+    Date of bỉth:
+    <input type = "text" id = "dob"><br>
+    Email:
+    <input type = "text" id = "email"><br>
+    Address:
+    <input type = "text" id = "address"><br>
+    Number of people:
+    <input type = "text" id = "nop"><br>
+    Number of days:
+    <input type = "text" id = "nod"><br>
+    Discount:
+    <input type = "text" id = "discount"><br>
+    Hạng khách:
+    <select id ="hangkhach" onchange="hkChanged(this)"><br>
+        <option value = "diamond">Diamond</option>
+        <option value = "platinum">Platinum</option>
+        <option value = "gold">Gold</option>
+        <option value = "sliver">Silver</option>
+        <option value = "member">Member</option>
+    </select>
+     Loại Dịch vụ:
+     <select id = "loaiphong" onchange="lpChanged(this)"><br>
+        <option value = "villa">Villa</option>
+         <option value = "house">House</option>
+        <option value = "room">Room</option>
+     </select>
+    Loại phòng thuê:
+    <select id = "hangphong" onchange="hpChanged(this)"><br>
+        <option value = "vip">Vip</option>
+        <option value = "business">Business</option>
+        <option value = "normal">Normal</option>
+    </select>
+    <p><input type ="button" onclick ="hienthi()" value ="hienthi"></p>
+    <p><input type ="button" onclick ="hienthinut()" value ="hienthinut"></p>
+</form>
+<p id="ketqua1"></p>
+<p id="ketqua2"></p>
+<p id="ketqua3"></p>
+<p id="ketqua4"></p>
+<script>
+    var ketqua1 = document.getElementById("ketqua1");
+    var ketqua2 = document.getElementById("ketqua2");
+    var ketqua3 = document.getElementById("ketqua3");
+    var ketqua4 = document.getElementById("ketqua4");
+
+    function hienthi() {
+
+        var name = document.getElementById("name").value;
+        var idc = document.getElementById("idc").value;
+        var dob = document.getElementById("dob").value;
+        var email = document.getElementById("email").value;
+        var address = document.getElementById("address").value;
+        var nop = document.getElementById("nop").value;
+        var nod = document.getElementById("nod").value;
+        var discount = document.getElementById("discount").value;
+
+        ketqua1.innerText = name + idc + dob + email + address + nop + nod + discount;
+        // var hangkhach = document.getElementById('hangkhach');
+        // var loaiphong = document.getElementById('loạiphong');
+        // var hangphong = document.getElementById('hangphong');
+        // ketqua2.innerText = hangkhach.value;
+        // ketqua3.innerText = loaiphong.value;
+        // ketqua4.innerText = hangphong.value;
+
+    }
+        function hkChanged(hkc) {
+            var hangkhach = hkc.value;
+            if (hangkhach === "diamond") {
+                ketqua2.innerText = "Hạng khách là Diamond."
+            } else if (hangkhach === "platinum") {
+                ketqua2.innerText = "Hạng khách là Platinum."
+            } else if (hangkhach === "gold") {
+                ketqua2.innerText = "Hạng khách là Gold."
+            } else if (hangkhach === "sliver") {
+                ketqua2.innerText = "Hạng khách là Sliver."
+            } else if (hangkhach === "member") {
+                ketqua2.innerText = "Hạng khách là Member."
+            }
+        };
+
+        function lpChanged(lpc) {
+            var loaiphong = lpc.value;
+            if (loaiphong === "villa") {
+                ketqua3.innerText = "Loại dịch vụ của quý khách là villa."
+            } else if (loaiphong === "house") {
+                ketqua3.innerText = "Loại dịch vụ của quý khách là House."
+            } else if (loaiphong === "room") {
+                ketqua3.innerText = "Loại dịch vụ của quý khách là Room."
+            }
+        };
+
+        function hpChanged(hpc) {
+            var hangphong = hpc.value;
+            if (hangphong === "vip") {
+                ketqua4.innerText = "Hạng phòng của quý khách là Vip."
+            } else if (hangphong === "business") {
+                ketqua4.innerText = "Hạng phòng của quý khách là Business."
+            } else if (hangphong === "normal") {
+                ketqua4.innerText = "Hạng phòng của quý khách là Normal."
+            }
+        }
+
+document.write(hangphong.value);
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

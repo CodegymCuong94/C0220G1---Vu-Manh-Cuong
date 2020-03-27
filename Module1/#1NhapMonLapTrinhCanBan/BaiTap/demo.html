@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>Amount</label>
+<input id="number" type="text"><br/>
+<label>From Currency</label>
+<select id="fromCurrency">
+    <option value="VN">Việt Nam</option>
+    <option value="USD">USD</option>
+</select><br/>
+<label>To Currency</label>
+<select id="toCurrency">
+    <option value="VN">Việt Nam</option>
+    <option value="USD">USD</option>
+</select><br/>
+<button onclick="custom()">Convert</button>
+<br/>
+<p id="result"></p>
+<script>
+    function custom() {
+        let number = document.getElementById('number');
+        let fromCurrency = document.getElementById('fromCurrency');
+        let toCurrency = document.getElementById('toCurrency');
+        let result = document.getElementById('result');
+        let money = parseInt(number.value);
+        let n_money;
+        if (fromCurrency.value === "VN") {
+            if (toCurrency.value === "VN") {
+                n_money = money;
+            } else if (toCurrency.value === "USD") {
+                n_money = money / 23000;
+            }
+        } else if (fromCurrency.value === "USD") {
+            if (toCurrency.value === "VN") {
+                n_money = money * 23000;
+            } else if (toCurrency.value === "USD") {
+                n_money = money;
+            }
+        }
+        result.innerText = fromCurrency.value;
+    }
+</script>
+</body>
+</html>
+</body>
+</html>

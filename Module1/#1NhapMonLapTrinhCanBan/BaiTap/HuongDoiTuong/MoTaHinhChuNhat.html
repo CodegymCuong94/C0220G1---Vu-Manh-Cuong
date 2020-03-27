@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Rectangle {
+        chieudai;
+        chieurong;
+        constructor(chieudai,chieurong) {
+        this.chieudai=chieudai;
+        this.chieurong=chieurong;
+        }
+        dientich(){
+            console.log("Dien tich hinh chu nhat la: "+ (this.chieudai* this.chieurong));
+        }
+        chuvi(){
+            console.log("Chu vi hinh chu nhat la: "+ (this.chieudai*2 +this.chieurong*2));
+        }
+    }
+    let rectangle = new Rectangle(3,5);
+    rectangle.dientich();
+    rectangle.chuvi();
+</script>
+</body>
+</html>

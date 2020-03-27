@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Mydate {
+        day;
+        month;
+        year;
+        constructor(day,month,year){
+            this.day=day;
+            this.month=month;
+            this.year=year;
+        }
+        hienthiday(){
+            console.log("Day is " + this.day);
+        }
+        hienthimonth(){
+            console.log("Month is "+ this.month);
+        }
+        hienthiyear(){
+            console.log("Year is "+ this.year);
+        }
+    }
+    let mydate = new Mydate(10,4,1994);
+    mydate.hienthiday();
+    mydate.hienthimonth();
+    mydate.hienthiyear();
+
+</script>
+
+</body>
+</html>

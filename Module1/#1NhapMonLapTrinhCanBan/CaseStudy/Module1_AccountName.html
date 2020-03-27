@@ -5,71 +5,43 @@
     <title>Title</title>
 </head>
 <body>
-<form>
-    Name:
-    <input type = "text" id = "name"><br>
-    ID Card:
-    <input type = "text" id = "idc"><br>
-    Date of bỉth:
-    <input type = "text" id = "dob"><br>
-    Email:
-    <input type = "text" id = "email"><br>
-    Address:
-    <input type = "text" id = "address"><br>
-    Number of people:
-    <input type = "text" id = "nob"><br>
-    Number of days:
-    <input type = "text" id = "nod"><br>
-
-    Hạng khách:
-    <select id ="hangkhach"><br>
-        <option value = "diamond">Diamond</option>
-        <option value = "platinum">Platinum</option>
-        <option value = "gold">Gold</option>
-        <option value = "sliver">Silver</option>
-        <option value = "member">Member</option>
-    </select>
-     Loại Dịch vụ:
-     <select id = "loaiphong"   ><br>
-        <option value = "villa">Villa</option>
-         <option value = "house">House</option>
-        <option value = "room">Room</option>
-     </select>
-    Loại phòng thuê:
-    <select id = "hangphong">
-        <option value = "vip">Vip</option>
-        <option value = "business">Business</option>
-        <option value = "normal">Normal</option>
-    </select>
-    <button onclick="hienthi();return false">Hiển thị</button>
-</form>
-<p id="ketqua"></p>
 <script>
-    function hienthi(){
+    var name = prompt("Nhập tên khách hàng:");
+    var idcard = prompt("Nhập số CMND:");
+    var dob = prompt("Nhập ngày sinh:");
+    var email = prompt("Nhập địa chỉ email:");
+    var address =prompt("Nhập địa chỉ:");
+    var customer =prompt("Nhập loại khách:").toLowerCase();
+    var discount = prompt("Nhập phần trăm giảm giá:")*1;
+    var nop =prompt("Nhập số lượng khách:")*1;
+    var nod = prompt("Nhập số ngày thuê phòng:")*1;
+    var ldv = prompt("Nhập loại dịnh vụ:").toLowerCase();
+    var lpt = prompt("Nhập loại phòng thuê:").toLowerCase();
+    var bill=0;
+  alert(
+      "Tên Kháchh: "+ name+"\n"+
+      "Số CMND: "+ idcard+ "\n" +
+      "Ngày sinh: "+ dob +"\n"+
+      "Email: " +email +"\n"+
+      "Địa chỉ: " + address +"\n"+
+      "Loại khách: "+ customer+"\n"+
+      "Giảm giá: "+ discount+"\n"+
+      "SỐ lượng khách: "+ nop +"\n"+
+      "Số ngày thuê :"+ nod + "\n"+
+      "Loại dịch vụ: "+ ldv+"\n"+
+      "Loại phòng thuê :"+ lpt +"\n");
 
-        var name = document.getElementById("name").value;
-        var idc = document.getElementById("idc").value;
-        var dob = document.getElementById("dob").value;
-        var email = document.getElementById("email").value;
-        var address = document.getElementById("address").value;
-        var nob = document.getElementById("nob").value;
-        var nod = document.getElementById("nod").value;
-        var hangkhach = document.getElementById("hangkhach").value;
-        var loaiphong = document.getElementById("loaiphong").value;
-        var hangphong = document.getElementByIt("hangphong").value;
-        var ketqua = document.getElementById("ketqua").value;
-        document.write("name + idc + dob + email + address + nob + nod + hangkhach + loaiphong + hangphong") ;
-
-
-
-    }
+  if(ldv == "villa"){
+      bill = 500* nod *(1-(discount/100));
+      alert("Tổng tiền phải trả là: " +bill+ " USD"+"\n")
+  }else if( ldv =="house"){
+      bill = 300* nod *(1-(discount/100));
+      alert("Tổng tiền phải trả là: " +bill+" USD"+"\n")
+  }else if(ldv =="room") {
+      bill = 100 * nod * (1 - (discount / 100));
+      alert("Tổng tiền phải trả là: " + bill + " USD" + "\n")
+  }
 </script>
-
-
-
-
-
-
 
 </body>
 </html>

@@ -5,19 +5,134 @@
     <title>Title</title>
 </head>
 <body>
-                                                <!--//Bai 1:-->
+                                                <!--//Bai 1:-->TÍNH BÌNH PHƯƠNG
+<!--&lt;!&ndash;<form>&ndash;&gt;-->
+<!--&lt;!&ndash;   <p> Nhập một số vào ô trống <input type = "number" id ="number"></p>&ndash;&gt;-->
+<!--&lt;!&ndash;    <p><input type = "button" value = "Bình phương" onclick = "binhphuong()"></p>&ndash;&gt;-->
+<!--&lt;!&ndash;    <p id = "ketqua"></p>&ndash;&gt;-->
+<!--&lt;!&ndash;</form>&ndash;&gt;-->
+<!--&lt;!&ndash;<script>&ndash;&gt;-->
+<!--&lt;!&ndash;    function binhphuong() {&ndash;&gt;-->
+<!--&lt;!&ndash;var number = document.getElementById("number").value*1;&ndash;&gt;-->
+<!--&lt;!&ndash;  document.getElementById("ketqua").innerText ="Giá trị bình phương của số: "+number+" là " +(number * number)&ndash;&gt;-->
+<!--&lt;!&ndash;    }&ndash;&gt;</script>-->
+<!--                                                //Bài 2:-->TÍNH CHU VI VÀ DIỆN TÍCH HÌNH TRÒN
 <!--<form>-->
-<!--   <p> Nhập một số vào ô trống <input type = "number" id ="number"></p>-->
-<!--    <p><input type = "button" value = "Bình phương" onclick = "binhphuong()"></p>-->
+<!--   <p>Bán kính hình tròn <input type ="number" id ="radius" > </p>-->
+<!--    <p><input type ="button" onclick ="hienthi()" value ="hienthi"></p>-->
 <!--    <p id = "ketqua"></p>-->
 <!--</form>-->
 <!--<script>-->
-<!--    function binhphuong() {-->
-<!--var number = document.getElementById("number").value*1;-->
-<!--  document.getElementById("ketqua").innerText ="Giá trị bình phương của số: "+number+" là " +(number * number)-->
+<!--    function hienthi() {-->
+<!--        var radius = document.getElementById("radius").value * 1;-->
+<!--        document.getElementById("ketqua").innerText = "Chu vi hình tròn là: " + (radius * 2 * 3.14) +" Diện tích hình tròn là: " + (radius * radius * 3.14);-->
 <!--    }-->
-                                                //Bài 2:
+<!--</script>-->
+<!--                                        //Bai 3:-->tính GIAI THỪA
+<!--<form>-->
+<!--    <p>Nhập vào một số bất kỳ<input type ="number" id="number"></p>-->
+<!--    <p><input type ="button" value="Giai thừa" onclick ="giaithua()"></p>-->
+<!--    <p id ="ketqua"></p>-->
+<!--</form>-->
+<!--<script>-->
+<!--    function giaithua() {-->
+<!--let number = document.getElementById("number").value*1;-->
+<!--var a = 1;-->
+<!--for(i = 1; i<=number; i++){-->
+<!--    a*=i;-->
+<!--};-->
+<!--document.getElementById("ketqua").innerText="Giai thừa của số :"+ number + " là "+ a;-->
+<!--    }-->
+<!--</script>-->
+<!--                                                //Bài 4:-->KIỂM TRA KÝ TỰ DẠNG CHUỖI HAY SỐ
+<!--<form>-->
+<!--    <p>Nhập một ký tự bất kỳ vào hộp: <input type ="text" id="kytu"></p>-->
+<!--    <p><input type = "button" onclick ="kiemtra()" value ="kiểm tra"> </p>-->
+<!--    <p id ="ketqua"></p>-->
+<!--</form>-->
+<!--    <script>-->
+<!--        function kiemtra() {-->
+<!--            var kytu = document.getElementById("kytu").value;-->
+<!--        if(kytu == parseInt(kytu,10)){//cách so sánh ký tự xem có phải dạng số hay chuỗi-->
+<!--            document.getElementById("ketqua").innerText="True"-->
+<!--        }else{document.getElementById("ketqua").innerText = "False"}-->
+<!--        }-->
+<!--    </script>-->
+<!--                            //Bài 5:-->TÌM GIÁ TRỊ NHỎ NHẤT TRONG DÃY SỐ
+<!--<script>-->
+<!--    var array=[];-->
+<!--    for(i=0;i<3; i++){-->
+<!--        array[i]= prompt("nhập vào 3 giá trị bất kỳ")-->
+<!--    };-->
+<!--    function kiemtra() {-->
+<!--        var min = Math.min.apply(Math,array);-->
+<!--        document.write("Giá trị nhỏ nhất trong 3 số là: " + min)-->
+<!--        }-->
+<!--    kiemtra();-->
 
+<!--</script>-->
+                            <!--//Bài 6:-->KIỂM TRA SỐ NGUYÊN DƯƠNG
+<!--<script>-->
+<!--    var number =prompt("Nhập vào một số bất kỳ",)*1;-->
+<!--    function kiemtra() {-->
+<!--        if(number >=0){-->
+<!--            alert("True")-->
+<!--        }else{alert("False")}-->
+<!--    }-->
+<!--kiemtra();-->
+<!--</script>-->
+                            <!--//BÀI 7:-->HOÁN ĐỔI VỊ TRÍ ARRAY.REVERSE()
+<!--<script>-->
+<!--    var array=[];-->
+<!--    for(i=0; i<2;i++){-->
+<!--        array[i]=prompt("nhập vào 2 số bất kỳ:")-->
+<!--    }-->
+<!--    function doicho() {-->
+<!--        array.reverse();-->
+<!--        alert(array)-->
+<!--    }-->
+<!--    doicho();-->
+<!--</script>-->
+                                            //BÀI 8:HOÁN ĐỔI VỊ TRÍ ARRAY.REVERSE()
+<!--                                                <script>-->
+<!--                                                    var array=[];-->
+<!--                                                    for(i=0; i<5;i++){-->
+<!--                                                        array[i]=prompt("nhập vào 5 số bất kỳ:")-->
+<!--                                                    }-->
+<!--                                                    function doicho() {-->
+<!--                                                        array.reverse();-->
+<!--                                                        alert(array)-->
+<!--                                                    }-->
+<!--                                                    doicho();-->
+<!--                                                </script>-->
+                                    //BÀI 9:KIỂM TRA KÝ TỰ CÓ THUỘC MẢNG KO VÀ SỐ LẦN XUẤT HIỆN
+<script>
+var array=[];
+for(i=0; i<5; i++){
+    array[i]= prompt("nhập vào một mảng ký tự bất kỳ 5 lần: ")
+}
+var key = prompt("nhập vào một ký tự đặc biệt: ");
+var count1 =0;
+function kiemtra1() {
+    for(i=0;i<5; i++){
+        if(key == array[i]){count1++;
+            document.write("ký tự "+ key +" có xuất hiện trong dãy ký tự đã nhập");break;
+        }
+    }if(count1 ==0){
+        document.write("ký tự đặt biệt :" + key+ " không xuất hiện trong dãy ký tự đã nhập"+"<br>");
+    }
+};kiemtra1();
+var count2=0;
+function kiemtra2() {
+    for (i = 0; i < 5; i++) {
+        if (key == array[i]) {
+            count2++;
+        }
+    }document.write("số lần xuất hiện của ký tự đặt biệt trong dãy ký tự là: " + count2 +"<br>");
+    if (count2 == 0) {
+        document.write(" ")
+    }
+}  kiemtra2();
 </script>
 </body>
 </html>

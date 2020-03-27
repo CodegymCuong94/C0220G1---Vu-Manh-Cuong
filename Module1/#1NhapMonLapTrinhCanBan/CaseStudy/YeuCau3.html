@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+                                           //1.KHAI BÁO TÊN
+var name = prompt("Nhập tên khách hàng: ").trim();
+document.write(name + "<br>")
+
+                                           //2.KHAI BÁO CMND
+var idcard = prompt("Nhập số CMND: ",);
+
+while(isNaN(idcard)!==false   || idcard.length !== 9 || idcard*1 <0 ) {
+     idcard = prompt("Nhập số CMND: ",)
+};
+document.write(idcard);
+                                           //3.KHAI BÁO NGÀY SINH
+var date = prompt("Nhập ngày tháng năm khách hàng vào(dạng: DD/MM/YYY )",);
+var b = date.split("");
+while(b.length!==10 || b[0]<0 ||b[0] >3 ||b[1]<0 || b[2]!=="/" || b[5]!=="/" ||b[3]<0 || b[3]>1 || b[6]<=0 || b[7]<0 || b[8]<0 || b[9]<0){
+    date = prompt("Nhập ngày tháng năm vào(dạng: DD/MM/YYY )",);
+    b = date.split("");
+};
+                                          //4.KHAI BÁO EMAIL
+var email = prompt("Nhập địa chỉ email: (dạng: xxxxxx@gmail.com)");
+var c =email.split("").reverse();
+while(c[0] !=="m" || c[1]!== "o" || c[2]!=="c" || c[3]!=="." || c[4]!== "l" || c[5]!== "i"|| c[6]!== "a" || c[7]!=="m" ||c[8]!=="g" ||c[9]!== "@"){
+    email = prompt("Nhập địa chỉ email: ");
+    c =email.split("").reverse();
+};
+document.write(email);
+                                           //5.KHAI BÁO ĐỊA CHỈ
+var address = prompt("Nhập địa chỉ khách hàng: ");
+                                            // //6. KHAI BÁO LOẠI KHÁCH
+var custumer = prompt("Nhập loại khách: ");
+                                            //7.KHAI BÁO PHẦN TRĂM GIẢM GIÁ
+var discount = prompt("Nhập phần trăm giảm giá: ");
+while(isNaN(discount) !== false || discount*1 <0 ){
+    discount =prompt("Nhập phần trăm giảm giá: ")
+};
+//                                             // //8.KHAI BÁO SỐ LƯỢNG KHÁCH
+var nop = prompt("Nhập số lượng khách: ");
+while (nop*1<1 || isNaN(nop)!== false){
+    nop = prompt("Nhập số lượng khách: ")
+};
+//                                             // //9.KHAI BÁO SỐ NGÀY THUÊ
+var nud = prompt("Nhập số ngày khách ở: ");
+while (nud*1 <1 || isNaN(nud) !== false){
+    nud = prompt("Nhập số ngày khách ở: ")
+};
+//                                             // //10.KHAI BÁO LOẠI DỊCH VỤ
+var typeofS= prompt("Nhập loại dịch vụ: ");
+
+//                                             // //11.KHAI BÁO LOẠI PHÒNG THUÊ
+var typeofR = prompt("Nhập loại phòng: ");
+alert(name+ "\n"
+      +idcard + "\n"
+        + date+ "\n"
+        +email +"\n"
+        +address + "\n"
+        +custumer + "\n"
+        +discount + "\n"
+        +nop +" \n"
+        + nud + "\n"
+        + typeofS + "\n"
+        + typeofR + "\n")
+</script>
+
+</body>
+</html>

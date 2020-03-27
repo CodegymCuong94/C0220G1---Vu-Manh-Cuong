@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let menu = parseInt(prompt("1: Thông tin khách hàng."+"\n"
+                         + "2: Chỉnh sửa thông tin khách hàng. "+ "\n"
+                         + "3: Số tiền phải thanh toán. " +"\n",)  );
+    let name = "Vũ Mạnh Cường";
+    let idcard ="201760297";
+    let dob = "10/04/1994";
+    let email = "cuong101994@gmail.com";
+    let address ="Đà Nẵng";
+    let typeofC ="Diamon";
+    let discount ="10";
+    let nop ="1";
+    let nod ="10";
+    let typeofS="Villa";
+    let typeofR ="Vip";
+
+    if(menu==1){
+                                    //HIỂN THỊ THÔNG TIN KHÁCH HÀNG
+        alert("1.Tên Kháchh: "+ name+"\n"+
+        "2.Số CMND: "+ idcard+ "\n" +
+        "3.Ngày sinh: "+ dob +"\n"+
+        "4.Email: " +email +"\n"+
+        "5.Địa chỉ: " + address +"\n"+
+        "6.Loại khách: "+ typeofC+"\n"+
+        "7.Giảm giá: "+ discount+"\n"+
+        "8.SỐ lượng khách: "+ nop +"\n"+
+        "9.Số ngày thuê :"+ nod + "\n"+
+        "10.Loại dịch vụ: "+ typeofS+"\n"+
+        "11.Loại phòng thuê :"+ typeofR +"\n");
+
+    }else if(menu ==2){
+                                //CHỈNH SỬA THÔNG TIN KHÁCH HÀNG
+              var edit= prompt("1.Tên Kháchh: "+ name+"\n"+
+                   "2.Số CMND: "+ idcard+ "\n" +
+                   "3.Ngày sinh: "+ dob +"\n"+
+                   "4.Email: " +email +"\n"+
+                   "5.Địa chỉ: " + address +"\n"+
+                   "6.Loại khách: "+ typeofC+"\n"+
+                   "7.Giảm giá: "+ discount+"\n"+
+                   "8.SỐ lượng khách: "+ nop +"\n"+
+                   "9.Số ngày thuê :"+ nod + "\n"+
+                   "10.Loại dịch vụ: "+ typeofS+"\n"+
+                   "11.Loại phòng thuê :"+ typeofR +"\n",);
+
+              switch (edit) {
+                  case "1":
+                      name =prompt("1.Tên khách: ",);
+                      alert("1.Tên Kháchh: "+ name+"\n"+
+                          "2.Số CMND: "+ idcard+ "\n" +
+                          "3.Ngày sinh: "+ dob +"\n"+
+                          "4.Email: " +email +"\n"+
+                          "5.Địa chỉ: " + address +"\n"+
+                          "6.Loại khách: "+ typeofC+"\n"+
+                          "7.Giảm giá: "+ discount+"\n"+
+                          "8.SỐ lượng khách: "+ nop +"\n"+
+                          "9.Số ngày thuê :"+ nod + "\n"+
+                          "10.Loại dịch vụ: "+ typeofS+"\n"+
+                          "11.Loại phòng thuê :"+ typeofR +"\n",);
+                      break;
+                  case "2":
+                      idcard =prompt("2.Số CMND: ",);
+                      alert("1.Tên Kháchh: "+ name+"\n"+
+                          "2.Số CMND: "+ idcard+ "\n" +
+                          "3.Ngày sinh: "+ dob +"\n"+
+                          "4.Email: " +email +"\n"+
+                          "5.Địa chỉ: " + address +"\n"+
+                          "6.Loại khách: "+ typeofC+"\n"+
+                          "7.Giảm giá: "+ discount+"\n"+
+                          "8.SỐ lượng khách: "+ nop +"\n"+
+                          "9.Số ngày thuê :"+ nod + "\n"+
+                          "10.Loại dịch vụ: "+ typeofS+"\n"+
+                          "11.Loại phòng thuê :"+ typeofR +"\n",);
+                      break;
+                  case "3":
+                      dob =prompt("3.Ngày sinh: ",);
+                      alert("1.Tên Kháchh: "+ name+"\n"+
+                          "2.Số CMND: "+ idcard+ "\n" +
+                          "3.Ngày sinh: "+ dob +"\n"+
+                          "4.Email: " +email +"\n"+
+                          "5.Địa chỉ: " + address +"\n"+
+                          "6.Loại khách: "+ typeofC+"\n"+
+                          "7.Giảm giá: "+ discount+"\n"+
+                          "8.SỐ lượng khách: "+ nop +"\n"+
+                          "9.Số ngày thuê :"+ nod + "\n"+
+                          "10.Loại dịch vụ: "+ typeofS+"\n"+
+                          "11.Loại phòng thuê :"+ typeofR +"\n",);
+                      break;
+                  case "4":
+                      email =prompt("4.Email: ",);
+                      alert("1.Tên Kháchh: "+ name+"\n"+
+                          "2.Số CMND: "+ idcard+ "\n" +
+                          "3.Ngày sinh: "+ dob +"\n"+
+                          "4.Email: " +email +"\n"+
+                          "5.Địa chỉ: " + address +"\n"+
+                          "6.Loại khách: "+ typeofC+"\n"+
+                          "7.Giảm giá: "+ discount+"\n"+
+                          "8.SỐ lượng khách: "+ nop +"\n"+
+                          "9.Số ngày thuê :"+ nod + "\n"+
+                          "10.Loại dịch vụ: "+ typeofS+"\n"+
+                          "11.Loại phòng thuê :"+ typeofR +"\n",);
+                      break;
+                  case "5":
+                      address =prompt("5.Địa chỉ: ",);
+                      alert("1.Tên Kháchh: "+ name+"\n"+
+                          "2.Số CMND: "+ idcard+ "\n" +
+                          "3.Ngày sinh: "+ dob +"\n"+
+                          "4.Email: " +email +"\n"+
+                          "5.Địa chỉ: " + address +"\n"+
+                          "6.Loại khách: "+ typeofC+"\n"+
+                          "7.Giảm giá: "+ discount+"\n"+
+                          "8.SỐ lượng khách: "+ nop +"\n"+
+                          "9.Số ngày thuê :"+ nod + "\n"+
+                          "10.Loại dịch vụ: "+ typeofS+"\n"+
+                          "11.Loại phòng thuê :"+ typeofR +"\n",);
+                      break;
+                  case "6":
+                      typeofC =prompt("6.Loại khách: ",);
+                      alert("1.Tên Kháchh: "+ name+"\n"+
+                          "2.Số CMND: "+ idcard+ "\n" +
+                          "3.Ngày sinh: "+ dob +"\n"+
+                          "4.Email: " +email +"\n"+
+                          "5.Địa chỉ: " + address +"\n"+
+                          "6.Loại khách: "+ typeofC+"\n"+
+                          "7.Giảm giá: "+ discount+"\n"+
+                          "8.SỐ lượng khách: "+ nop +"\n"+
+                          "9.Số ngày thuê :"+ nod + "\n"+
+                          "10.Loại dịch vụ: "+ typeofS+"\n"+
+                          "11.Loại phòng thuê :"+ typeofR +"\n",);
+                      break;
+                  case "7":
+                      discount =prompt("7.Giảm giá: ",);
+                      alert("1.Tên Kháchh: "+ name+"\n"+
+                          "2.Số CMND: "+ idcard+ "\n" +
+                          "3.Ngày sinh: "+ dob +"\n"+
+                          "4.Email: " +email +"\n"+
+                          "5.Địa chỉ: " + address +"\n"+
+                          "6.Loại khách: "+ typeofC+"\n"+
+                          "7.Giảm giá: "+ discount+"\n"+
+                          "8.SỐ lượng khách: "+ nop +"\n"+
+                          "9.Số ngày thuê :"+ nod + "\n"+
+                          "10.Loại dịch vụ: "+ typeofS+"\n"+
+                          "11.Loại phòng thuê :"+ typeofR +"\n",);
+                      break;
+                  case "8":
+                      nop =prompt("8.Số lượng khách: ",);
+                      alert("1.Tên Kháchh: "+ name+"\n"+
+                          "2.Số CMND: "+ idcard+ "\n" +
+                          "3.Ngày sinh: "+ dob +"\n"+
+                          "4.Email: " +email +"\n"+
+                          "5.Địa chỉ: " + address +"\n"+
+                          "6.Loại khách: "+ typeofC+"\n"+
+                          "7.Giảm giá: "+ discount+"\n"+
+                          "8.Số lượng khách: "+ nop +"\n"+
+                          "9.Số ngày thuê :"+ nod + "\n"+
+                          "10.Loại dịch vụ: "+ typeofS+"\n"+
+                          "11.Loại phòng thuê :"+ typeofR +"\n",);
+                      break;
+                  case "9":
+                      nod =prompt("9.Số ngày thuê : ",);
+                      alert("1.Tên Kháchh: "+ name+"\n"+
+                          "2.Số CMND: "+ idcard+ "\n" +
+                          "3.Ngày sinh: "+ dob +"\n"+
+                          "4.Email: " +email +"\n"+
+                          "5.Địa chỉ: " + address +"\n"+
+                          "6.Loại khách: "+ typeofC+"\n"+
+                          "7.Giảm giá: "+ discount+"\n"+
+                          "8.Số lượng khách: "+ nop +"\n"+
+                          "9.Số ngày thuê :"+ nod + "\n"+
+                          "10.Loại dịch vụ: "+ typeofS+"\n"+
+                          "11.Loại phòng thuê :"+ typeofR +"\n",);
+                      break;
+                  case "10":
+                      typeofS =prompt("10.Loại dịch vụ: ",);
+                      alert("1.Tên Kháchh: "+ name+"\n"+
+                          "2.Số CMND: "+ idcard+ "\n" +
+                          "3.Ngày sinh: "+ dob +"\n"+
+                          "4.Email: " +email +"\n"+
+                          "5.Địa chỉ: " + address +"\n"+
+                          "6.Loại khách: "+ typeofC+"\n"+
+                          "7.Giảm giá: "+ discount+"\n"+
+                          "8.Số lượng khách: "+ nop +"\n"+
+                          "9.Số ngày thuê :"+ nod + "\n"+
+                          "10.Loại dịch vụ: "+ typeofS+"\n"+
+                          "11.Loại phòng thuê :"+ typeofR +"\n",);
+                      break;
+                  case "11":
+                      typeofR =prompt("11.Loại phòng thuê : ",);
+                      alert("1.Tên Kháchh: "+ name+"\n"+
+                          "2.Số CMND: "+ idcard+ "\n" +
+                          "3.Ngày sinh: "+ dob +"\n"+
+                          "4.Email: " +email +"\n"+
+                          "5.Địa chỉ: " + address +"\n"+
+                          "6.Loại khách: "+ typeofC+"\n"+
+                          "7.Giảm giá: "+ discount+"\n"+
+                          "8.Số lượng khách: "+ nop +"\n"+
+                          "9.Số ngày thuê :"+ nod + "\n"+
+                          "10.Loại dịch vụ: "+ typeofS+"\n"+
+                          "11.Loại phòng thuê :"+ typeofR +"\n",);
+                      break;
+              }
+            }else if(menu ==3){
+                                //HIỂN THỊ TỔNG GIÁ TRỊ PHẢI THANH TOÁN
+        if(address =="Đà Nẵng"){
+            add=20
+        }else if(address == "Huế"){
+            add =10
+        }else if (address == "Quảng Nam"){
+            add =5
+        };
+
+        if(nod>=2 && nod<=4){
+            numberod=10
+        }else if(nod>=5 && nod <=7){
+            numberod =20
+        }else if(nod >7){
+            numberod=30
+        };
+        if(typeofC=="Diamon"){
+            toC=15
+        }else if(typeoC=="Platium"){
+            toC=10
+        }else if(typeoC=="Gold"){
+            toC=5
+        }else if(typeoC=="Custummer"){
+            toC=2
+        }else if(typeoC=="Member"){
+            toC=0
+        };
+        discount = add+numberod+toC;
+        if(typeofS=="Villa"){
+            toS=500
+        }else if(typeofS=="House"){
+            toS=300
+        }else if(typeofS=="Room"){
+            toS=100
+        }
+        var bill = toS *nod -discount;
+        alert("Tổng số tiền phải thanh toán là: "+ bill)
+        }
+</script>
+</body>
+</html>

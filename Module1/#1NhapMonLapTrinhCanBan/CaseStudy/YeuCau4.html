@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    var menu = parseInt(prompt("1. Add new custumer." + "\n" +
+            "2. Delete custumer." + "\n",)   );
+        if(menu == 1){
+            var numberofpeople =parseInt(prompt("Nhập số lượng khách muốn thêm: ",));
+            var addcustumer =[];
+            for(i=0; i<numberofpeople; i++){
+                addcustumer[i] = prompt("Nhập thông tin khách hàng "+ (i+1) + " :",);
+            }
+            addcustumer.sort();
+            var str ="";
+            for(i =1; i<= numberofpeople; i++) {
+                str+= i + "." + addcustumer[i-1] + "\n";
+            }
+            alert(str);
+        }
+        else if(menu == 2) {
+            var custumer = ["cuong", "hung", "hoan", "hieu", "an", "binh", "duc"].sort();
+            var string = "";
+            for(i=1;i<= custumer.length; i++){
+                string+= i + "." + custumer[i-1] + "\n"
+            };
+            var deleteC = parseInt(prompt("Ban muon xoa khach hang nao?" + "\n" + string,));
+            if(deleteC == 1){
+                custumer.splice(0,1);
+                var string = "";
+                for(i=1;i<= custumer.length; i++){
+                    string+= i + "." + custumer[i-1] + "\n"
+                };
+                alert(string)
+            }else if(deleteC == 2) {
+                custumer.splice(1, 1);
+                var string = "";
+                for (i = 1; i <= custumer.length; i++) {
+                    string += i + "." + custumer[i - 1] + "\n"
+                }
+                ;
+                alert(string)
+            }else if(deleteC == 3) {
+                custumer.splice(2, 1);
+                var string = "";
+                for (i = 1; i <= custumer.length; i++) {
+                    string += i + "." + custumer[i - 1] + "\n"
+                }
+                ;
+                alert(string)
+            }else if(deleteC == 4) {
+                custumer.splice(3, 1);
+                var string = "";
+                for (i = 1; i <= custumer.length; i++) {
+                    string += i + "." + custumer[i - 1] + "\n"
+                }
+                ;
+                alert(string)
+            }else if(deleteC == 5) {
+                custumer.splice(4, 1);
+                var string = "";
+                for (i = 1; i <= custumer.length; i++) {
+                    string += i + "." + custumer[i - 1] + "\n"
+                }
+                ;
+                alert(string)
+            }else if(deleteC == 6) {
+                custumer.splice(5, 1);
+                var string = "";
+                for (i = 1; i <= custumer.length; i++) {
+                    string += i + "." + custumer[i - 1] + "\n"
+                }
+                ;
+                alert(string)
+            }else if(deleteC == 7) {
+                custumer.splice(6, 1);
+                var string = "";
+                for (i = 1; i <= custumer.length; i++) {
+                    string += i + "." + custumer[i - 1] + "\n"
+                }
+                ;
+                alert(string)
+            }
+
+        }
+</script>
+</body>
+</html>
