@@ -1,4 +1,6 @@
-public class Square extends Rectangle {
+package test;
+
+public class Square extends Rectangle implements Resizeable , Colorable{
     public Square() {
     }
 
@@ -31,9 +33,20 @@ public class Square extends Rectangle {
 
     @Override
     public String toString() {
-        return "A Square with side="
+        return "A test.Square with side="
                 + getSide()
                 + ", which is a subclass of "
                 + super.toString();
+    }
+
+    @Override
+    public void resize(double percent) {
+        this.setSide(percent * this.getSide());
+    }
+
+
+    @Override
+    public void howtoColor() {
+        System.out.println("Color all four sides.");
     }
 }

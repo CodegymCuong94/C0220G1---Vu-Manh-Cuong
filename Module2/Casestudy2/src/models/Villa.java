@@ -1,7 +1,11 @@
-public class Villa extends Services {
+package models;
+
+import java.io.Serializable;
+
+public class Villa extends Services  implements Serializable {
     public String standardOfRoom;
     public String convenient;
-    public double areaOfPool;
+    public Double areaOfPool;
     public int numberOfFloor;
 
     public Villa(String standardOfRoom, String convenient, double areaOfPool, int numberOfFloor) {

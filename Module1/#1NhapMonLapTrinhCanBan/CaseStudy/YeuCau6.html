@@ -2,9 +2,236 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+  class Customer {
+      name;
+      idcard;
+      date;
+      email;
+      address;
+      customer;
+      discount;
+      nop;
+      nod;
+      typeofS;
+      typeofR;
+      constructor (name, idcard, date, email, address, customer, discount, nop, nod, typeofS, typeofR){
+          this.name = name;
+          this.idcard = idcard;
+          this.date = date;
+          this.email = email;
+          this.address = address;
+          this.customer = customer;
+          this.discount = discount;
+          this.nop = nop;
+          this.nod = nod;
+          this.typeofR = typeofR;
+          this.typeofS = typeofS;
+      }
+
+}
+  let arrayLiscustomer =[];
+  function displayMainMenu() {
+      let chooseMenu = parseInt(prompt("1. Add new customer. "+ "\n"
+          +"2. Display information customer." +"\n"
+          +"3. Edit information customer. " + "\n"
+          +"4. Delete customer. " +"\n"
+          +"5. Exit. " + "\n" ));
+      switch (chooseMenu){
+          case 1: {
+              addnewcustomer();
+              break;
+          }case 2: {
+              displayCustomer();
+              break;
+          }case 3: {
+              editcustomer();
+              break;
+          }case 4: {
+              deletecustomer();
+              break;
+          }case 5: {
+              break;
+          }default :{
+              alert("Ban nhap sai roi")
+          }
+      }
+  }
+people = new Customer();
+  function addnewcustomer() {
+      // var customerInfo = [];
+      //1.KHAI BÁO TÊN
+      people.name = prompt("Nhập tên khách hàng: ").trim();
+
+      //2.KHAI BÁO CMND
+     people.idcard = prompt("Nhập số CMND: ",);
+      while(isNaN(people.idcard)!==false   || people.idcard.length !== 9 || people.idcard*1 <0 ) {
+          people.idcard = prompt("Nhập số CMND: ",)
+      };
+
+      //3.KHAI BÁO NGÀY SINH
+      people.date = prompt("Nhập ngày tháng năm khách hàng vào(dạng: DD/MM/YYY )",);
+      var b = people.date.split("");
+      while(b.length!==10 || b[0]<0 ||b[0] >3 ||b[1]<0 || b[2]!=="/" || b[5]!=="/" ||b[3]<0 || b[3]>1 || b[6]<=0 || b[7]<0 || b[8]<0 || b[9]<0){
+         people.date = prompt("Nhập ngày tháng năm vào(dạng: DD/MM/YYY )",);
+          b = people.date.split("");
+      };
+
+      //4.KHAI BÁO EMAIL
+     people.email = prompt("Nhập địa chỉ email: (dạng: xxxxxx@gmail.com)");
+      var c =people.email.split("").reverse();
+      while(c[0] !=="m" || c[1]!== "o" || c[2]!=="c" || c[3]!=="." || c[4]!== "l" || c[5]!== "i"|| c[6]!== "a" || c[7]!=="m" ||c[8]!=="g" ||c[9]!== "@"){
+          people.email = prompt("Nhập địa chỉ email: ");
+          c =people.email.split("").reverse();
+      };
+
+      //5.KHAI BÁO ĐỊA CHỈ
+      people.address = prompt("Nhập địa chỉ khách hàng: ");
+
+      // //6. KHAI BÁO LOẠI KHÁCH
+      people.customer = prompt("Nhập loại khách: ");
+
+      //7.KHAI BÁO PHẦN TRĂM GIẢM GIÁ
+      people.discount = prompt("Nhập phần trăm giảm giá: ");
+      while(isNaN(people.discount) !== false || people.discount*1 <0 ){
+          people.discount =prompt("Nhập phần trăm giảm giá: ")
+      };
+
+//                                             // //8.KHAI BÁO SỐ LƯỢNG KHÁCH
+      people.nop = prompt("Nhập số lượng khách: ");
+      while (people.nop*1<1 || isNaN(people.nop)!== false){
+          people.nop = prompt("Nhập số lượng khách: ")
+      };
+
+//                                             // //9.KHAI BÁO SỐ NGÀY THUÊ
+      people.nud = prompt("Nhập số ngày khách ở: ");
+      while (people.nud*1 <1 || isNaN(people.nud) !== false){
+          people.nud = prompt("Nhập số ngày khách ở: ")
+      };
+
+//                                             // //10.KHAI BÁO LOẠI DỊCH VỤ
+      people.typeofS= prompt("Nhập loại dịch vụ: ");
+
+//                                             // //11.KHAI BÁO LOẠI PHÒNG THUÊ
+      people.typeofR = prompt("Nhập loại phòng: ");
+      // 12. ADD DANH SACH VAO MANG 1 CHIEU
+      arrayLiscustomer.push(people);
+      // customerInfo.push(name);
+      // customerInfo.push(idcard);
+      // customerInfo.push(date);
+      // customerInfo.push(email);
+      // customerInfo.push(address);
+      // customerInfo.push(customer);
+      // customerInfo.push(discount);
+      // customerInfo.push(nop);
+      // customerInfo.push(nud);
+      // customerInfo.push(typeofS);
+      // customerInfo.push(typeofR);
+      //13. ADD DANH SACH VAO MANG 2 CHIEU
+      // arrayLiscustomer.push(customerInfo);
+      alert("Ban da nhap them khach hang thanh cong.")
+      var str = "";
+      for(i = 0; i< arrayLiscustomer.length; i++){
+          str+=arrayLiscustomer[i] + "\n"
+      }
+      alert(str);
+      displayMainMenu()
+  }
+  function displayCustomer() {
+      var str = "";
+      for (var i=1; i<= arrayLiscustomer.length; i++){
+          str+= i + ". Name: " +arrayLiscustomer[i-1][0] + " CMND: " + arrayLiscustomer[i-1][1] + "\n";
+      }
+      var choosedisplay = parseInt(prompt(str));
+      alert("1.Tên Kháchh: "+ arrayLiscustomer[choosedisplay-1][0]+"\n"+
+          "2.Số CMND: "+ arrayLiscustomer[choosedisplay-1][1]+ "\n" +
+          "3.Ngày sinh: "+ arrayLiscustomer[choosedisplay-1][2] +"\n"+
+          "4.Email: " +arrayLiscustomer[choosedisplay-1][3] +"\n"+
+          "5.Địa chỉ: " + arrayLiscustomer[choosedisplay-1][4] +"\n"+
+          "6.Loại khách: "+ arrayLiscustomer[choosedisplay-1][5]+"\n"+
+          "7.Giảm giá: "+ arrayLiscustomer[choosedisplay-1][6]+"\n"+
+          "8.SỐ lượng khách: "+ arrayLiscustomer[choosedisplay-1][7] +"\n"+
+          "9.Số ngày thuê :"+ arrayLiscustomer[choosedisplay-1][8] + "\n"+
+          "10.Loại dịch vụ: "+ arrayLiscustomer[choosedisplay-1][9]+"\n"+
+          "11.Loại phòng thuê :"+ arrayLiscustomer[choosedisplay-1][10] +"\n")
+      alert(str);
+
+  }
+  function editcustomer() {
+      var str = "";
+      for (var i=1; i<= arrayLiscustomer.length; i++){
+          str+= i + ". Name: " +arrayLiscustomer[i-1][0] + " CMND: " + arrayLiscustomer[i-1][1] + "\n";
+      }
+      var choosedisplay = parseInt(prompt(str));
+      var chooseedit = parseInt(prompt("1.Tên Kháchh: "+ arrayLiscustomer[choosedisplay-1][0]+"\n"+
+          "2.Số CMND: "+ arrayLiscustomer[choosedisplay-1][1]+ "\n" +
+          "3.Ngày sinh: "+ arrayLiscustomer[choosedisplay-1][2] +"\n"+
+          "4.Email: " +arrayLiscustomer[choosedisplay-1][3] +"\n"+
+          "5.Địa chỉ: " + arrayLiscustomer[choosedisplay-1][4] +"\n"+
+          "6.Loại khách: "+ arrayLiscustomer[choosedisplay-1][5]+"\n"+
+          "7.Giảm giá: "+ arrayLiscustomer[choosedisplay-1][6]+"\n"+
+          "8.SỐ lượng khách: "+ arrayLiscustomer[choosedisplay-1][7] +"\n"+
+          "9.Số ngày thuê :"+ arrayLiscustomer[choosedisplay-1][8] + "\n"+
+          "10.Loại dịch vụ: "+ arrayLiscustomer[choosedisplay-1][9]+"\n"+
+          "11.Loại phòng thuê :"+ arrayLiscustomer[choosedisplay-1][10] +"\n"));
+      switch (chooseedit-1) {
+          case 0: {
+              arrayLiscustomer[choosedisplay-1][0] = prompt("Nhập tên khách muốn thay đổi: ")
+          }break;
+          case 1: {
+              arrayLiscustomer[choosedisplay-1][1] = prompt("Nhập số CMND muốn thay đổi: ")
+          }break;
+          case 2: {
+              arrayLiscustomer[choosedisplay-1][2] = prompt("Nhập ngày sinh muốn thay đổi: ")
+          }break;
+          case 3: {
+              arrayLiscustomer[choosedisplay-1][3] = prompt("Nhập email muốn thay đổi: ")
+          }break;
+          case 4: {
+              arrayLiscustomer[choosedisplay-1][4] = prompt("Nhập địa chỉ muốn thay đổi: ")
+          }break;
+          case 5: {
+              arrayLiscustomer[choosedisplay-1][5] = prompt("Nhập loại khách muốn thay đổi: ")
+          }break;
+          case 6: {
+              arrayLiscustomer[choosedisplay-1][6] = prompt("Nhập giảm giá muốn thay đổi: ")
+          }break;
+          case 7: {
+              arrayLiscustomer[choosedisplay-1][7] = prompt("Nhập số lượng khách muốn thay đổi: ")
+          }break;
+          case 8: {
+              arrayLiscustomer[choosedisplay-1][8] = prompt("Nhập số ngày thuê muốn thay đổi: ")
+          }break;
+          case 9: {
+              arrayLiscustomer[choosedisplay-1][9] = prompt("Nhập loại dịch vụ muốn thay đổi: ")
+          }break;
+          case 10: {
+              arrayLiscustomer[choosedisplay-1][10] = prompt("Nhập loại phòng thuê muốn thay đổi: ")
+          }break;
+
+      }
+
+      editcustomer();
+  };
+  function deletecustomer() {
+      var str = "";
+      for (var i=1; i<= arrayLiscustomer.length; i++){
+          str+= i + ". Name: " +arrayLiscustomer[i-1][0] + " CMND: " + arrayLiscustomer[i-1][1] + "\n";
+      };
+      var choosedisplay = parseInt(prompt(str)-1);
+      arrayLiscustomer.splice(choosedisplay,1);
+      var str = "";
+      for (var i=1; i<= arrayLiscustomer.length; i++){
+          str+= i + ". Name: " +arrayLiscustomer[i-1][0] + " CMND: " + arrayLiscustomer[i-1][1] + "\n";
+      };
+      alert(str);
+  }
+  displayMainMenu();
+
+
+</script>
 </body>
 </html>

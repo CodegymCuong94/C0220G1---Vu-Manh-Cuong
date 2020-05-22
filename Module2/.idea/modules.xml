@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Casestudy2/Casestudy2.iml" filepath="$PROJECT_DIR$/Casestudy2/Casestudy2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module2.iml" filepath="$PROJECT_DIR$/Module2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ReadAndWriteFileCSV/ReadAndWriteFileCSV.iml" filepath="$PROJECT_DIR$/ReadAndWriteFileCSV/ReadAndWriteFileCSV.iml" />
+    </modules>
+  </component>
+</project>

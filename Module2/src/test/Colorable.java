@@ -1,4 +1,5 @@
 package test;
 
-public class Colorable {
+public interface Colorable {
+void howtoColor();
 }

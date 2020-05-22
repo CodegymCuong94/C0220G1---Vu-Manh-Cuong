@@ -4,7 +4,7 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
-public class test1 {
+public class testAddNewService {
     public static void main(String[] args) throws FileNotFoundException {
 //        MainController t2 = new MainController();
         addNewSerVices();

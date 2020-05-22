@@ -2,9 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    // var email =prompt("nhạp email:")
+    // var check = /^[a-zA-Z0-9]+@[a-zA-Z0-9]+[.][a-zA-Z]{2,4}$/;
+    // while(true){
+    //     if (!check.test(email)){
+    //         email = prompt("sai định dạng mail")
+    //     }else{
+    //         alert("Chao thanhthanh124");
+    //         break;
+    //     }
+    // }
+    function email() {
+        var email = prompt("Nhập địa chỉ email: (dạng: xxxxxx@codegym.com)");
+
+        var c =email.split("").reverse();
+        while(c[0] !=="m" || c[1]!== "o" || c[2]!=="c" || c[3]!=="." || c[4]!== "m" || c[5]!== "y"|| c[6]!== "g" || c[7]!=="e" ||c[8]!=="d" ||c[9]!== "o" ||c[10]!=="c" || c[11]!=="@"){
+            email = prompt("Nhập sai địa chỉ email. ");
+            c =email.split("").reverse();
+            var d =email.split("@");
+            document.write("Chào " +d[0])
+        };
+
+    }
+    email();
+</script>
 </body>
 </html>

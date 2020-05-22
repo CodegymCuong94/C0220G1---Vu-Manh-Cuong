@@ -2,9 +2,129 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    //BAI 1:
+    // let n = parseInt(prompt("nhập số phần tử n"));
+    // var arr = [];
+    // while (true){
+    //     if(n<0 || n>6){
+    //         n = parseInt(prompt("nhập số phần tử n"));
+    //     }else{
+    //         for(let i =0; i<n; i++){
+    //             arr[i]=prompt("nhap phan tu thu"+ (i+1))*1;
+    //         }break;
+    //     }
+    // }
+    // arr.sort();
+    // alert("mang sau khi sắp xếp"+ arr.join(','));
+    //Bai 2:
+
+//     function isNumber() {
+// var num = prompt("nhập vào một số có 4 chữ số");
+// var arr= num.split("");
+// document.write(arr+ "<br>");
+// var a0 = Number(arr[0]);
+// var a1 = Number(arr[1]);
+// var a2 = Number(arr[2] );
+// var a3 = Number(arr[3]);
+// var b = a0+a1;
+// var c = a2-a3;
+//
+//         if(b==c){
+//             document.write("true")
+//         }else{
+//             document.write("false")
+//         }
+//
+//     }
+//     isNumber();
+
+    //Bai 3:
+    // var email =prompt("nhạp email:")
+    // var check = /^[a-zA-Z0-9]+@[a-zA-Z0-9]+[.][a-zA-Z]{2,4}$/;
+    // while(true){
+    //     if (!check.test(email)){
+    //         email = prompt("sai định dạng mail")
+    //     }else{
+    //         var d =email.split("@");
+    //         document.write("Chào " +d[0])
+    //         break;
+    //     }
+    // }
+
+    //Bai 4:
+
+    class nhanvien {
+        id;
+        name;
+        pass;
+        dob;
+        idcard;
+        gioitinh;
+        address;
+        phone;
+constructor(id, name, pass, dob, idcard,gioitinh, address, phone) {
+    this.id = id;
+    this.name = name;
+    this.address = address;
+    this.pass = pass;
+    this.gioitinh= gioitinh;
+    this.dob = dob;
+    this.idcard = idcard;
+    this.phone = phone;
+}
+    }
+    employee = new nhanvien();
+    function displayMainMenu() {
+        let chooseMenu = parseInt(prompt("1. Add new employee. " + "\n"
+            + "2. Login user." + "\n"
+        ));
+        switch (chooseMenu) {
+            case 1: {
+                add();
+                break;
+            }
+            case 2: {
+                loginuser();
+                break;
+            }
+            default : {
+                alert("Ban nhap sai roi");
+            }
+        }
+    }
+   function add(){
+        employee.name = prompt("nhap tên nhân viên: ").trim();
+        employee.id = prompt("nhập tên đăng nhập: ");
+        employee.pass = prompt("nhập pass: ");
+        employee.idcard =prompt("nhập số cmnd: ");
+        employee.address = prompt("nhập địa chỉ: ");
+        employee.gioitinh =prompt("nhập giới tính:");
+       employee.phone = prompt("nhập số điên thoại:");
+       employee.dob = prompt("Nhập ngày tháng năm vào(dạng: DD/MM/YYY )",);
+       var b = employee.dob.split("");
+       while(b.length!==10 || b[0]<0 ||b[0] >3 ||b[1]<0 || b[2]!=="/" || b[5]!=="/" ||b[3]<0 || b[3]>1 || b[6]<=0 || b[7]<0 || b[8]<0 || b[9]<0){
+           employee.dob = prompt("Nhập ngày tháng năm vào(dạng: DD/MM/YYY )",);
+           b = employee.dob.split("");
+       };displayMainMenu()
+    };
+    function loginuser() {
+        var user = prompt("nhâp id:");
+        if (user !== employee.id){
+            employee.id = prompt("nhập tên đăng nhập: ");
+        }else{document.write("nhập đúng rồi tiếp tục đi nhé")};
+        var pass = prompt("nhập pass: ");
+        if(pass !== employee.pass){
+            employee.pass = prompt("nhập pass: ");
+        }else{document.write("Chúc mừng bạn đã đăng nhập thành công")}
+    };
+displayMainMenu();
+
+
+
+</script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-public class HienThi100SoNguyenToDauTien {
+public class HienThiSoNguyenToNhoHon100 {
     public static void main(String[] args) {
 
 

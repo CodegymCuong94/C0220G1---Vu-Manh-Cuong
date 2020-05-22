@@ -1,3 +1,5 @@
+package models;
+
 public class House extends Services {
     public String standardOfRoom;
     public String convenient;

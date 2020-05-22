@@ -1,3 +1,5 @@
+package models;
+
 public class Room extends Services {
     public String servicesForFree;
 
