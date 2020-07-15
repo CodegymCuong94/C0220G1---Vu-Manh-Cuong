@@ -1,0 +1,211 @@
+<!--<html xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <link rel="stylesheet" href="css/bootstrap.min.css" />-->
+<!--    <link rel="stylesheet" href="css/dashboard.css" />-->
+<!--    <script src="js/jquery-3.5.0.min.js"></script>-->
+<!--    <script src="js/bootstrap.min.js"></script>-->
+<!--    <script src="js/dashboard.js"></script>-->
+<!--</head>-->
+<!--<body>-->
+<!-- -&#45;&#45;-->
+<!--layout: examples-->
+<!--title: Dashboard Template-->
+<!--extra_css: "dashboard.css"-->
+<!--extra_js:-->
+<!-- - "https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"-->
+<!-- - "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"-->
+<!-- - "dashboard.js"-->
+<!-- -&#45;&#45;-->
+
+<!--<nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">-->
+<!--    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Managerment Member Tiki</a>-->
+<!--    <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">-->
+<!--    <ul class="navbar-nav px-3">-->
+<!--        <li class="nav-item text-nowrap">-->
+<!--            <a class="nav-link" href="#">Sign out</a>-->
+<!--        </li>-->
+<!--    </ul>-->
+<!--</nav>-->
+
+<!--<div class="container-fluid">-->
+<!--    <div class="row">-->
+<!--        <nav class="col-md-2 d-none d-md-block bg-light sidebar">-->
+<!--            <div class="sidebar-sticky">-->
+<!--                <ul class="nav flex-column">-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link active" th:href="@{/view.html}">-->
+<!--                            <span data-feather="home"></span>-->
+<!--                            List Customer <span class="sr-only">(current)</span>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    &lt;!&ndash;                    <li class="nav-item">&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        <a class="nav-link" th:href="@{/editCustomer}">&ndash;&gt;-->
+<!--                    &lt;!&ndash;                            <span data-feather="file"></span>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                            Edit Customer&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        </a>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                    </li>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                    <li class="nav-item">&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        <a class="nav-link" th:href="@{/listRoom}">&ndash;&gt;-->
+<!--                    &lt;!&ndash;                            <span data-feather="shopping-cart"></span>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                            List Room&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        </a>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                    </li>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                    <li class="nav-item">&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        <a class="nav-link" th:href="@{/createCustomer}">&ndash;&gt;-->
+<!--                    &lt;!&ndash;                            <span data-feather="users"></span>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                            Create Customers&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        </a>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                    </li>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                    <li class="nav-item">&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        <a class="nav-link" th:href="@{/listEmployee}">&ndash;&gt;-->
+<!--                    &lt;!&ndash;                            <span data-feather="bar-chart-2"></span>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                            List Employee&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        </a>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                    </li>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                    <li class="nav-item">&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        <a class="nav-link" href="#">&ndash;&gt;-->
+<!--                    &lt;!&ndash;                            <span data-feather="layers"></span>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                            Integrations&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        </a>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                    </li>&ndash;&gt;-->
+<!--                </ul>-->
+
+<!--&lt;!&ndash;                <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <span>Saved reports</span>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <span data-feather="plus-circle"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                </h6>&ndash;&gt;-->
+<!--&lt;!&ndash;                <ul class="nav flex-column mb-2">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <li class="nav-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <a class="nav-link" href="#">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <span data-feather="file-text"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;                            Current month&ndash;&gt;-->
+<!--&lt;!&ndash;                        </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <li class="nav-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <a class="nav-link" href="#">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <span data-feather="file-text"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;                            Last quarter&ndash;&gt;-->
+<!--&lt;!&ndash;                        </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <li class="nav-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <a class="nav-link" href="#">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <span data-feather="file-text"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;                            Social engagement&ndash;&gt;-->
+<!--&lt;!&ndash;                        </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <li class="nav-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <a class="nav-link" href="#">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <span data-feather="file-text"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;                            Year-end sale&ndash;&gt;-->
+<!--&lt;!&ndash;                        </a>&ndash;&gt;-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--        </nav>-->
+
+<!--        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">-->
+<!--            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">-->
+<!--                <h1 class="h2">Dashboard</h1>-->
+<!--                <div class="btn-toolbar mb-2 mb-md-0">-->
+<!--                    <div class="btn-group mr-2">-->
+<!--                        <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>-->
+<!--                        <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>-->
+<!--                    </div>-->
+<!--                    <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">-->
+<!--                        <span data-feather="calendar"></span>-->
+<!--                        This week-->
+<!--                    </button>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            &lt;!&ndash;            <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>&ndash;&gt;-->
+
+<!--            <h2>Edit Customer</h2>-->
+<!--            <div class="table-responsive">-->
+<!--                <table class="table table-striped table-sm">-->
+<!--                    <thead>-->
+
+<!--                    <tr>-->
+<!--                        <th>Id</th>-->
+<!--                        <th>Customer Type</th>-->
+<!--                        <th>Name</th>-->
+<!--                        <th>Sex</th>-->
+<!--                        <th>Phone</th>-->
+<!--                        <th>IdCard</th>-->
+<!--                        <th>Email</th>-->
+<!--                        <th>Address</th>-->
+<!--                        <th>Save</th>-->
+
+<!--                    </tr>-->
+<!--                    </thead>-->
+<!--                    <tbody>-->
+<!--                    <form action="edit.html" method="post" th:object="${customer}">-->
+<!--                        <tr>-->
+<!--                           <td><input th:field="${customer.id}" ></td>-->
+<!--                            <td><input th:field="${customer.customerType}" ></td>-->
+<!--                            <td><input th:field="${customer.name}" ></td>-->
+<!--                            <td><input th:field="${customer.sex}" ></td>-->
+<!--                            <td><input th:field="${customer.phone}" ></td>-->
+<!--                            <td><input th:field="${customer.idCard}" ></td>-->
+<!--                            <td><input th:field="${customer.email}" ></td>-->
+<!--                            <td><input th:field="${customer.address}" ></td>-->
+<!--                           <td><input type="submit" value="Save"></td>-->
+<!--                    </form>-->
+<!--                        </tr>-->
+
+
+<!--                    </th:block>-->
+
+<!--                    </tbody>-->
+<!--                </table>-->
+<!--            </div>-->
+<!--        </main>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--</body>-->
+<!--</html>-->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Sua NV</h1>
+
+<form action="/edit" method="post" th:object="${nv}">
+    <input th:field="${nv.id}" type="hidden">
+    <br>
+    <label>Customer Type</label>
+    <input th:field="${nv.group}">
+    <br>
+    <label>Name</label>
+    <input th:field="${nv.name}">
+    <br>
+    <label>Sex</label>
+    <input th:field="${nv.sex}">
+    <br>
+    <label>Date</label>
+    <input th:field="${nv.date}">
+    <br>
+    <label>Phone</label>
+    <input th:field="${nv.phone}">
+    <br>
+    <label>Email</label>
+    <input th:field="${nv.email}">
+    <br>
+    <label>Id Card</label>
+    <input th:field="${nv.idCard}">
+    <br>
+    <label>Address</label>
+    <input th:field="${nv.address}">
+    <br>
+    <input type="submit" value="save">
+</form>
+
+</body>
+</html>

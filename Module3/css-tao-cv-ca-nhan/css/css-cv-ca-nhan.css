@@ -1,0 +1,45 @@
+
+#header{
+    background: yellow;
+    height: 30px;
+    width: 100%;
+
+    float: left;
+
+}
+#headerR {
+    height: 30px;
+    width: 30%;
+    background: white;
+    text-align: left;
+    float: left;
+    color: darkgreen;
+    padding-top: 6px;
+
+}
+
+#headerL {
+    height: 30px;
+    width: 70%;
+    background: darkgreen;
+    float: left;
+    text-align: right;
+    color: white;
+    padding-top: 6px;
+}
+
+#left{
+    background: darkgreen;
+    height: 400px;
+    width: 30%;
+    float: left;
+    color: white;
+}
+#main{
+    background: white;
+    height: 400px;
+    width: 70%;
+    float: left;
+    color: black;
+
+}

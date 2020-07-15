@@ -1,0 +1,18 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Title</title>
+</head>
+<body>
+
+<h2>Register product</h2>
+
+<form th:action="@{/create}" method="post" th:object="${product}">
+    <input th:field="*{id}" type="hidden">
+    <input th:field="*{name}"/>
+    <input th:field="*{price}"/>
+    <input th:field="*{amount}"/>
+    <input type="submit" value="Register"/>
+</form>
+
+</body>
+</html>

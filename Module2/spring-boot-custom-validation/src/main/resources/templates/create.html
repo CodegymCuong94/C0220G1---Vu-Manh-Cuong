@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:action="@{/create}" accept-charset="UTF-8" method="post" th:object="${user}">
+    <label >Create a new member here</label>
+    <br>
+    <label >First Name</label>
+    <input th:field="*{firstName}"/>
+    <p th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}"></p>
+    <br>
+    <label >Last Name</label>
+    <input th:field="*{lastName}"/>
+    <p th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}"></p>
+    <br>
+    <label >Age</label>
+    <input th:field="*{age}"/>
+    <p th:if="${#fields.hasErrors('age')}" th:errors="*{age}"></p>
+    <br>
+    <label >Phone</label>
+    <input th:field="*{phone}"/>
+    <p th:if="${#fields.hasErrors('phone')}" th:errors="*{phone}"></p>
+    <br>
+    <label >Email</label>
+    <input th:field="*{email}"/>
+    <p th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></p>
+    <br>
+    <input type="submit" value="Register"/>
+</form>
+</body>
+</html>

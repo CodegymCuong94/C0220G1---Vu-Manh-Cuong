@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>View</title>
+</head>
+<body>
+<a th:href="@{/create}">Create</a>
+<table border="1px">
+    <thead>
+
+<tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Sex</th>
+    <th>Email</th>
+    <th>IdCard</th>
+    <th>Phone</th>
+    <th>Delete</th>
+    <th>Edit</th>
+
+</tr>
+</thead>
+<tbody>
+<th:block th:each="a : ${aList}">
+    <tr>
+        <td th:text="${a.id}"  scope="col"></td>-->
+        <td th:text="${a.name}" scope="col"></td>
+        <td th:text="${a.sex}" scope="col"></td>
+        <td th:text="${a.email}" scope="col"></td>
+        <td th:text="${a.idCard}" scope="col"></td>
+        <td th:text="${a.phone}" scope="col"></td>
+        <td><a th:href="@{/delete(id=${a.id})}">Delete</a></td>
+        <td><a th:href="@{/edit(id=${a.id})}">Edit</a></td>
+    </tr>
+</th:block>
+
+</tbody>
+</table>
+</body>
+</html>

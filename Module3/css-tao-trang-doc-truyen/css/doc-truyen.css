@@ -1,0 +1,45 @@
+#header{
+    background: aliceblue;
+    height: 60px ;
+    width: 100%;
+}
+#search {
+    background: orange;
+    height: 20px;
+    width: 40%;
+    float: right;
+    border: blueviolet;
+    font-family: Arial;
+
+}
+#link {
+    text-decoration: none;
+    background:orangered ;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    padding-top: 12px;
+}
+/*thêm từng cái bằng cách tạo ra 1 class sau đó dùng cái nào thì nhét class đó vào*/
+.margin-right{
+    margin-right: 15px
+}
+
+#left{
+    background: chartreuse;
+    height: 350px;
+    width: 20%;
+    float: left;
+
+}
+#main{
+    background: aqua;
+    height: 350px;
+    width: 80%;
+    float: left;
+    font-family: Arial;
+}
+
+.margin-top{
+    margin: 20px;
+}

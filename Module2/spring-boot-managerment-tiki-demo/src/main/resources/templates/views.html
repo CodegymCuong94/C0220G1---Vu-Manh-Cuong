@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a class="nav-link active" th:href="@{/view.html}">DS NV
+</a>
+<a class="nav-link active" th:href="@{/create.html}">Tao NV
+</a>
+<table class="table table-striped table-sm">
+    <thead>
+
+    <tr>
+        <th>Id</th>
+        <th>Group</th>
+        <th>Name</th>
+        <th>Sex</th>
+        <th>Date</th>
+        <th>Phone</th>
+        <th>IdCard</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Delete</th>
+        <th>Edit</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <th:block th:each="nv : ${nvList}">
+        <tr>
+            <td th:text="${nv.id}"  scope="col"></td>-->
+            <td th:text="${nv.group}" scope="col"></td>
+            <td th:text="${nv.name}" scope="col"></td>
+            <td th:text="${nv.sex}" scope="col"></td>
+            <td th:text="${nv.date}" scope="col"></td>
+            <td th:text="${nv.phone}" scope="col"></td>
+            <td th:text="${nv.idCard}" scope="col"></td>
+            <td th:text="${nv.email}" scope="col"></td>
+            <td th:text="${nv.address}" scope="col"></td>
+            <td><a th:href="@{/delete(id=${nv.id})}">Delete</a></td>
+            <td><a th:href="@{/edit(id=${nv.id})}">Edit</a></td>
+        </tr>
+    </th:block>
+
+    </tbody>
+</table>
+</body>
+</html>

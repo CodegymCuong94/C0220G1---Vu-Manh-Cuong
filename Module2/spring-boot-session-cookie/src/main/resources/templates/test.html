@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:action="@{/checkSession}" method="post" th:object="${checkSession}">
+    <input type="hidden" th:field="${checkSession.id}" /><br>
+    <input type="text" th:field="${checkSession.name}"/><br>
+    <input type="submit" value="Test">
+</form>
+</body>
+</html>

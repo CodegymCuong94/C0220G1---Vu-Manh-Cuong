@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+</head>
+<body>
+<h1>Blog</h1>
+<form action="/list" method="get">
+    <input type="text" name="keyword" />
+    <input type="submit" value="Search"/>
+</form>
+<table border="1px">
+    <li><a th:href="@{/list}">List</a></li>
+    <li><a th:href="@{/create}">Create</a></li>
+    <br>
+    <th:block th:each="blog : ${blogs}">
+        <tr>
+            <td th:text="${blog.id}"></td>
+            <td th:text="${blog.text}"></td>
+        </tr>
+    </th:block>
+</table>
+<div>
+    <a th:if="${blogs.hasPrevious()}" th:href="@{/list(page=${blogs.number - 1}, keyword = ${keyword})}">Previous</a>
+    <span th:text="${blogs.number + 1}"></span>/<span th:text="${blogs.totalPages}"></span>
+    <a th:if="${blogs.hasNext()}" th:href="@{/list(page=${blogs.number + 1}, keyword = ${keyword})}">Next</a>
+
+</div>
+</body>
+</html>

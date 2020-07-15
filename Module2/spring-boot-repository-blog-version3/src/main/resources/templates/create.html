@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Creat Blog</title>
+</head>
+<body>
+<h1>Creat Blog</h1>
+
+
+<form th:action="@{/create}" accept-charset="UTF-8" method="post" th:object="${blog}">
+    <label >Write a new blog here</label>
+    <input th:field="*{id}"/>
+    <input th:field="*{text}"/>
+    <input type="submit" value="Register"/>
+<!--    <option th:each="blog : ${listBlog}"-->
+<!--            th:value="${blog.id}" th:text="${blog.text}"></option>-->
+</form>
+
+</body>
+</html>

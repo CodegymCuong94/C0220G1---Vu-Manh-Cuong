@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>List villa</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+<h1>List villa</h1>
+<!--//Tạo bảng có kẻ khung bằng cách thêm thuộc tính border="1px" vào trong thẻ table-->
+
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">id</th>
+        <th scope="col">name</th>
+        <th scope="col">User Area</th>
+        <th scope="col">Standard of Room</th>
+        <th scope="col">Area of Pool</th>
+        <th scope="col">Number of Floor</th>
+        <th scope="col">Number of People</th>
+        <th scope="col">Cost</th>
+        <th scope="col">Another Convenient</th>
+        <th scope="col">Type of Rent</th>
+    </tr>
+    </thead>
+    <a th:href="@{/createCustomer}">Register Customer</a>
+    <br>
+    <a th:href="@{/listCustomer}">List Customer</a>
+    <br>
+    <tbody>
+    <th:block th:each="villa : ${villas}">
+        <tr>
+            <td th:text="${villa.id}"  scope="col"></td>
+            <td th:text="${villa.name}" scope="col"></td>
+            <td th:text="${villa.userArea}" scope="col"></td>
+            <td th:text="${villa.standardOfRoom}" scope="col"></td>
+            <td th:text="${villa.areaOfPool}" scope="col"></td>
+            <td th:text="${villa.numberOfFloor}" scope="col"></td>
+            <td th:text="${villa.numberOfPeople}" scope="col"></td>
+            <td th:text="${villa.coast}" scope="col"></td>
+            <td th:text="${villa.anotherConvenient}" scope="col"></td>
+            <td th:text="${villa.typeOfRent}" scope="col"></td>
+        </tr>
+    </th:block>
+    </tbody>
+</table>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

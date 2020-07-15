@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="30186e2d-2be1-4996-aea9-f76d518b5738" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Java/CaculatorServeletJSP/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/CaculatorServeletJSP/.idea/artifacts/CaculatorServeletJSP_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/CaculatorServeletJSP/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/CaculatorServeletJSP/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/CaculatorServeletJSP/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/CaculatorServeletJSP/CaculatorServeletJSP.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/CaculatorServeletJSP/out/artifacts/CaculatorServeletJSP_war_exploded/WEB-INF/classes/CaculatorServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/CaculatorServeletJSP/out/artifacts/CaculatorServeletJSP_war_exploded/WEB-INF/classes/caculator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/CaculatorServeletJSP/out/artifacts/CaculatorServeletJSP_war_exploded/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/CaculatorServeletJSP/out/artifacts/CaculatorServeletJSP_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/CaculatorServeletJSP/out/artifacts/CaculatorServeletJSP_war_exploded/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/CaculatorServeletJSP/out/artifacts/CaculatorServeletJSP_war_exploded/ketqua.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/CaculatorServeletJSP/out/production/CaculatorServeletJSP/CaculatorServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/CaculatorServeletJSP/out/production/CaculatorServeletJSP/caculator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/CaculatorServeletJSP/src/caculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/CaculatorServeletJSP/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/CaculatorServeletJSP/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/DemoDiscountCaculator/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/DemoDiscountCaculator/.idea/artifacts/DemoDiscountCaculator_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/DemoDiscountCaculator/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/DemoDiscountCaculator/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/DemoDiscountCaculator/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/DemoDiscountCaculator/DemoDiscountCaculator.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/DemoDiscountCaculator/out/artifacts/DemoDiscountCaculator_war_exploded/WEB-INF/classes/CaculatorServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/DemoDiscountCaculator/out/artifacts/DemoDiscountCaculator_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/DemoDiscountCaculator/out/artifacts/DemoDiscountCaculator_war_exploded/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/DemoDiscountCaculator/out/artifacts/DemoDiscountCaculator_war_exploded/result.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/DemoDiscountCaculator/out/production/DemoDiscountCaculator/CaculatorServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/DemoDiscountCaculator/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/DemoDiscountCaculator/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/DemoJSPCaculator/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/DemoJSPCaculator/.idea/artifacts/DemoJSPCaculator_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/DemoJSPCaculator/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/DemoJSPCaculator/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/DemoJSPCaculator/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/DemoJSPCaculator/DemoJSPCaculator.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/DemoJSPCaculator/out/artifacts/DemoJSPCaculator_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/DemoJSPCaculator/out/artifacts/DemoJSPCaculator_war_exploded/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/DemoJSPCaculator/out/artifacts/DemoJSPCaculator_war_exploded/result.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/DemoJSPCaculator/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/DemoJSPCaculator/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/ProductManagement/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/ProductManagement/.idea/artifacts/ProductManagement_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/ProductManagement/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/ProductManagement/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/ProductManagement/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/ProductManagement/ProductManagement.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/ProductManagement/out/artifacts/ProductManagement_war_exploded/WEB-INF/classes/com/productmanagement/controller/ProductServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/ProductManagement/out/artifacts/ProductManagement_war_exploded/WEB-INF/classes/com/productmanagement/model/Product.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/ProductManagement/out/artifacts/ProductManagement_war_exploded/WEB-INF/classes/com/productmanagement/service/ProductService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/ProductManagement/out/artifacts/ProductManagement_war_exploded/WEB-INF/classes/com/productmanagement/service/ProductServicelmpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/ProductManagement/out/artifacts/ProductManagement_war_exploded/product/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/ProductManagement/out/artifacts/ProductManagement_war_exploded/product/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/ProductManagement/out/artifacts/ProductManagement_war_exploded/product/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/ProductManagement/out/artifacts/ProductManagement_war_exploded/product/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/ProductManagement/out/production/ProductManagement/com/productmanagement/controller/ProductServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/ProductManagement/out/production/ProductManagement/com/productmanagement/model/Product.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/ProductManagement/out/production/ProductManagement/com/productmanagement/service/ProductService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/ProductManagement/out/production/ProductManagement/com/productmanagement/service/ProductServicelmpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/ProductManagement/src/com/productmanagement/controller/ProductServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/ProductManagement/src/com/productmanagement/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/ProductManagement/src/com/productmanagement/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/ProductManagement/src/com/productmanagement/service/ProductServicelmpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/ProductManagement/web/product/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/ProductManagement/web/product/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/ProductManagement/web/product/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/ProductManagement/web/product/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/ProductManagement/web/product/remove.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/SimpleLogin/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/SimpleLogin/.idea/artifacts/SimpleLogin_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/SimpleLogin/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/SimpleLogin/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/SimpleLogin/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/SimpleLogin/SimpleLogin.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/SimpleLogin/out/artifacts/SimpleLogin_war_exploded/WEB-INF/classes/LoginServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/SimpleLogin/out/artifacts/SimpleLogin_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/SimpleLogin/out/artifacts/SimpleLogin_war_exploded/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/SimpleLogin/out/production/SimpleLogin/LoginServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/SimpleLogin/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/SimpleLogin/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/Spring_Thymeleaf_Product_Management/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/Spring_Thymeleaf_Product_Management/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/Spring_Thymeleaf_Product_Management/src/main/webapp/WEB-INF/views/result.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/Spring_Thymeleaf_Product_Management/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/Spring_thymeleaf/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/Spring_thymeleaf/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/Spring_thymeleaf/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/Spring_thymeleaf/.idea/modules/Spring_thymeleaf.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/Spring_thymeleaf/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/Spring_thymeleaf/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/Spring_thymeleaf/src/main/webapp/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/Spring_thymeleaf/src/main/webapp/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/Spring_thymeleaf/src/main/webapp/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/caculatorSimpleSpringMVC/web/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/caculatorSimpleSpringMVC/web/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/changeMoney/changeMoney.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/changeMoney/src/controllers/changemoney.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/changeMoney/web/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/changeMoney/web/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/changeMoney/web/WEB-INF/views/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/dictionnarysimple/dictionarysimple.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/dictionnarysimple/web/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/dictionnarysimple/web/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/dictionnarysimple/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-currency-converter-jsp/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-currency-converter-jsp/.idea/artifacts/java_web_currency_converter_jsp_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-currency-converter-jsp/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-currency-converter-jsp/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-currency-converter-jsp/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-currency-converter-jsp/java-web-currency-converter-jsp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-currency-converter-jsp/out/artifacts/java_web_currency_converter_jsp_war_exploded/Converter.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-currency-converter-jsp/out/artifacts/java_web_currency_converter_jsp_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-currency-converter-jsp/out/artifacts/java_web_currency_converter_jsp_war_exploded/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-currency-converter-jsp/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-currency-converter-jsp/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-currency-converter/java-web-currency-converter.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-currency-converter/out/artifacts/java_web_currency_converter_war_exploded/WEB-INF/classes/CurrencyConverterServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-currency-converter/out/artifacts/java_web_currency_converter_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-currency-converter/out/artifacts/java_web_currency_converter_war_exploded/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-currency-converter/out/production/java-web-currency-converter/CurrencyConverterServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-currency-converter/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-mvc-version2/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-mvc-version2/.idea/artifacts/java_web_mvc_version2_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-mvc-version2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-mvc-version2/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-mvc-version2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-mvc-version2/java-web-mvc-version2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-mvc-version2/out/artifacts/java_web_mvc_version2_war_exploded/WEB-INF/classes/com/codegym/aa.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-mvc-version2/out/artifacts/java_web_mvc_version2_war_exploded/WEB-INF/classes/com/codegym/coltroller/CustomerServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-mvc-version2/out/artifacts/java_web_mvc_version2_war_exploded/WEB-INF/classes/com/codegym/model/Customer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-mvc-version2/out/artifacts/java_web_mvc_version2_war_exploded/WEB-INF/classes/com/codegym/service/CustomerService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-mvc-version2/out/artifacts/java_web_mvc_version2_war_exploded/WEB-INF/classes/com/codegym/service/CustomerServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-mvc-version2/out/artifacts/java_web_mvc_version2_war_exploded/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-mvc-version2/out/artifacts/java_web_mvc_version2_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-mvc-version2/out/artifacts/java_web_mvc_version2_war_exploded/customer/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-mvc-version2/out/artifacts/java_web_mvc_version2_war_exploded/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-mvc-version2/out/production/java-web-mvc-version2/com/codegym/aa.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-mvc-version2/out/production/java-web-mvc-version2/com/codegym/coltroller/CustomerServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-mvc-version2/out/production/java-web-mvc-version2/com/codegym/model/Customer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-mvc-version2/out/production/java-web-mvc-version2/com/codegym/service/CustomerService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-mvc-version2/out/production/java-web-mvc-version2/com/codegym/service/CustomerServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-mvc-version2/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-mvc-version2/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-mvc/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-mvc/.idea/artifacts/java_web_mvc_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-mvc/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-mvc/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-mvc/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-mvc/java-web-mvc.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-mvc/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/java-web-mvc/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/lesson01/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/lesson01/.idea/artifacts/lesson01_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/lesson01/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/lesson01/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/lesson01/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/lesson01/lesson01.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/lesson01/out/artifacts/lesson01_war_exploded/WEB-INF/classes/META-INF/lesson01.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/lesson01/out/artifacts/lesson01_war_exploded/WEB-INF/classes/TestServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/lesson01/out/artifacts/lesson01_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/lesson01/out/artifacts/lesson01_war_exploded/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/lesson01/out/artifacts/lesson01_war_exploded/message.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/lesson01/out/production/lesson01/META-INF/lesson01.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/lesson01/out/production/lesson01/TestServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/lesson01/src/TestServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/lesson01/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/lesson01/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/lesson01/web/message.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/server_time/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/server_time/.idea/artifacts/server_time_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/server_time/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/server_time/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/server_time/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/server_time/out/artifacts/server_time_war_exploded/WEB-INF/classes/ServerTimeServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/server_time/out/artifacts/server_time_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/server_time/out/artifacts/server_time_war_exploded/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/server_time/out/production/server_time/ServerTimeServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/server_time/server_time.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/server_time/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/server_time/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/simple_dictionary/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/spiceOfSandwich/web/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/spiceOfSandwich/web/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/spring-greeting/spring-greeting.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/spring-greeting/src/controllers/GreetingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/spring-greeting/web/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/spring-greeting/web/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/spring-greeting/web/WEB-INF/views/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/CaculatorServeletJSP/src/CaculatorServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/CaculatorServeletJSP/src/CaculatorServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/CaculatorServeletJSP/web/ketqua.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/CaculatorServeletJSP/web/ketqua.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/DemoDiscountCaculator/src/CaculatorServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/DemoDiscountCaculator/src/CaculatorServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/DemoDiscountCaculator/web/result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/DemoDiscountCaculator/web/result.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/DemoJSPCaculator/web/result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/DemoJSPCaculator/web/result.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/SimpleLogin/src/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/SimpleLogin/src/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/java-web-currency-converter-jsp/web/Converter.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/java-web-currency-converter-jsp/web/Converter.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/java-web-currency-converter/src/CurrencyConverterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/java-web-currency-converter/src/CurrencyConverterServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/java-web-mvc-version2/src/com/codegym/coltroller/CustomerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/java-web-mvc-version2/src/com/codegym/coltroller/CustomerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/java-web-mvc-version2/src/com/codegym/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/java-web-mvc-version2/src/com/codegym/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/java-web-mvc-version2/src/com/codegym/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/java-web-mvc-version2/src/com/codegym/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/java-web-mvc-version2/src/com/codegym/service/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/java-web-mvc-version2/src/com/codegym/service/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/java-web-mvc-version2/web/customer/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/java-web-mvc-version2/web/customer/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/java-web-mvc/src/com/codefym/controller/CustomerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/java-web-mvc/src/com/codefym/controller/CustomerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/java-web-mvc/src/com/codefym/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/java-web-mvc/src/com/codefym/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/java-web-mvc/src/com/codefym/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/java-web-mvc/src/com/codefym/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/java-web-mvc/src/com/codefym/service/CustomerServicelmpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/java-web-mvc/src/com/codefym/service/CustomerServicelmpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/server_time/src/ServerTimeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/server_time/src/ServerTimeServlet.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1do4bnwBFHER5RmxikOUFaoJhXB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="30186e2d-2be1-4996-aea9-f76d518b5738" name="Default Changelist" comment="" />
+      <created>1593078185929</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1593078185929</updated>
+      <workItem from="1593078187221" duration="13000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

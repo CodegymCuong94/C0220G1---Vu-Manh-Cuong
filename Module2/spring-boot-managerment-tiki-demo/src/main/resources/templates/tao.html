@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Form tao</h1>
+<form th:action="@{/tao}" th:object="${abc}">
+    <table>
+        <tr>
+            <th>Ten</th>
+<!--            <td><input type="text" th:field="${abc.thuoctinh}"></td>-->
+        </tr>
+        <tr>
+            <th>sdt</th>
+<!--            <td><input type="text" th:field="${abc.thuoctinh}"></td>-->
+        </tr>
+        <tr>
+            <td><input type="submit" value="Tao"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
